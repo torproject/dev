@@ -1,0 +1,37 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-17 20:36+CET\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: https://dev.torproject.org/ (content/contents+en.lr:page.title)
+msgid "The Tor Ecosystem"
+msgstr ""
+
+#: https://dev.torproject.org/ (content/contents+en.lr:page.subtitle)
+msgid "Tor protects you by bounsing your communications around a distributed network of relays run by volunteers all around the world."
+msgstr ""
+
+#: https://dev.torproject.org/ (content/contents+en.lr:page.body)
+msgid "The Tor community is made up of all kinds of contributors."
+msgstr ""
+
+#: https://dev.torproject.org/ (content/contents+en.lr:page.body)
+msgid "Some people write documentation and bug reports, while others hold Tor events and conduct outreach."
+msgstr ""
+
+#: https://dev.torproject.org/ (content/contents+en.lr:page.body)
+msgid "Whether you have a lot of time to volunteer or a little, and whether you consider yourself technical or not, we want you to join our community, too."
+msgstr ""
+
+#: https://dev.torproject.org/ (content/contents+en.lr:page.body)
+msgid "Below you'll find some different ways to volunteer with the Tor community as well as resources to help you help Tor."
+msgstr ""
+

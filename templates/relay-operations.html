@@ -1,0 +1,29 @@
+<div class="container py-5">
+  <div class="row py-5">
+    <div class="col-lg-7">
+      {{ this.body }}
+    </div>
+    <div class="col-lg-5">
+      <img src="/static/images/home/png/{{ this.section_id }}.png" class="img-fluid" alt="{{ _(this.section) }}" />
+    </div>
+  </div>
+  <div class="row">
+    {% for child in this.children|sort(attribute='key') %}
+      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h4 class="card-title text-primary"><a href="{{ child.path|url }}">{{ child.title }}</a></h4>
+            <p class="card-text">{{ child.subtitle }}</p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="row py-5 text-center mx-auto">
+    <h2 class="display-4 text-primary text-center mx-auto my-3">{{ _('Connect with other Relay Operators') }}</h2>
+    <p class="text-center">{{ _('The best resource of all is the active community of relay operators on tor-relays mailing list and on IRC #tor-relays in irc.oftc.net. ') }}</p>
+    <a class="btn btn-lg btn-outline-primary mx-auto my-3" href="https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays">
+          {{ _('Relay Operators mailing list') }}<i class="ml-3 pt-2 fas fa-arrow-right"></i>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="container py-5">
+  <div class="row pt-5">
+    <div class="col-lg-7">
+      {{ this.body }}
+    </div>
+    <div class="col-lg-5">
+      <img src="/static/images/home/png/{{ this.section_id }}.png" class="img-fluid" alt="{{ _(this.section) }}" />
+    </div>
+  </div>
+  <div class="row">
+    {% for child in this.children|sort(attribute='key') %}
+      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="card-body">
+              <h4 class="card-title text-primary">
+                <a href="{{ child.path|url(alt=this.alt) }}">{{ _(child.title) }}</a>
+              </h4>
+              <p class="card-text">{{ _(child.subtitle) }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="row py-5 text-center mx-auto">
+    <h2 class="display-4 text-primary text-center mx-auto">{{ _('Become a Community User Researcher') }}</h2>
+    <p class="text-center">
+      {{ _('Are you a design researcher, user researcher, student, or someone interested in learning more about Tor users? Do you have new ideas, suggestions, or research that can help improve Tor applications? Help us by coordinating user research with your local community, and learn more about best practices for working with users at-risk.') }}</p>
+      <a class="btn btn-lg btn-outline-primary mx-auto my-3" href="https://lists.torproject.org/cgi-bin/mailman/listinfo/ux">
+            {{ _('UX team mailing list') }}<i class="ml-3 pt-2 fas fa-arrow-right"></i>
+      </a>
+  </div>
+</div>

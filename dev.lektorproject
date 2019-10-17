@@ -1,0 +1,11 @@
+[project]
+name = Tor Dev Website
+url = https://dev.torproject.org/
+url_style = relative
+locale = en_US
+
+[alternatives.en]
+name = English (en)
+primary = yes
+url_prefix = /
+locale = en

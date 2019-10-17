@@ -1,0 +1,68 @@
+<div class="container py-5">
+  <div class="row py-5">
+    <div class="col-lg-7">
+      {{ this.body }}
+    </div>
+    <div class="col-lg-5">
+      <img src="/static/images/home/png/{{ this.section_id }}.png" class="img-fluid" alt="{{ _(this.section) }}" />
+    </div>
+  </div>
+  <a href="{{ this.path|url }}overview/"><h2 class="text-primary"><u>{{ _('Learn more about onion services here') }}
+    <i class="fas fa-arrow-right"></i></u>
+  </h2></a>
+  <div class="row py-5">
+    {% for child in this.children|sort(attribute='key') %}
+      {% if child.key != '0' %}
+      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
+        <div class="card h-100 border-0">
+          <div class="card-body">
+            <h2 class="text-primary display-2"><i class="fas fa-{{ child.image }}"></i></h2>
+            <h4 class="card-title text-primary">{{ child.title }}</h4>
+            <p class="card-text">{{ child.subtitle }}</p>
+            <a href="{{ child.path|url }}">{{ child.cta }} <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="row py-5 text-center mx-auto">
+    <h2 class="display-4 text-primary text-center mx-auto">{{ _('Onionize any website') }}</h2>
+    <p class="text-center">
+      {{ _('There\'s a toolkit that lets you take any existing website and host it as a .onion site. You would wanna do this because .onion sites are more secure than just regular sites. We show you how to use this toolkit and onionize a site.') }}
+    </p>
+  </div>
+  <div class="row mx-auto">
+    <div class="col-6">
+      <a href="https://github.com/alecmuffett/eotk#i-want-to-create-my-own-project">
+      <h3 class="text-primary text-center mx-auto"><u>{{ _('Learn more') }}
+        <i class="fas fa-arrow-right"></i></u>
+      </h3></a>
+    </div>
+    <div class="col-6">
+      <a href="https://github.com/alecmuffett/eotk"><h3 class="text-primary text-center mx-auto"><u>{{ _('Check out the code') }}
+        <i class="fas fa-arrow-right"></i></u>
+      </h3></a>
+    </div>
+  </div>
+  <div class="row py-5 text-center mx-auto">
+    <h2 class="display-4 text-primary text-center mx-auto">{{ _('Featured .onion sites') }}</h2>
+  </div>
+  <div class="row mx-auto">
+    {% for id, item in bag('onions').items() %}
+      <div class="col-4">
+        <div class="card h-50 border-0">
+          {% if id=='tor' %}
+            <img class="card-img-top h-100 w-25 mx-auto d-block" src="{{ item.image|asseturl }}">
+          {% else %}
+            <img class="card-img-top mx-auto d-block" src="{{ item.image|asseturl }}">
+          {% endif %}
+          <div class="card-body">
+            <p class="card-text text-primary text-center"><a href="{{ item.link }}">{{ item.link }}</a></p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>
