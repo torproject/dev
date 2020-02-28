@@ -1,0 +1,21 @@
+section: metrics
+---
+section_id: metrics
+---
+color: primary
+---
+_template: layout.html
+---
+title: Metrics Team
+---
+subtitle: The Metrics Team is a group of Tor people who care about measuring and analyzing things in the public Tor network.
+---
+key: 3
+---
+html: training.html
+---
+body:
+
+Welcome to the Metrics Team page!
+
+The Metrics Team is a group of Tor people who care about measuring and analyzing things in the public Tor network. If you're interested in measurements and analyses, the Metrics Team is what you're looking for. Welcome!

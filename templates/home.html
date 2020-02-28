@@ -7,20 +7,36 @@
   <section>
     <div class="container">
       <div class="row">
-        {% for child in this.children|sort(attribute='key') %}
+        {% for child in site.query('/').filter(F.section_id != 'gsoc')|sort(attribute='key') %}
           <div class="col-sm-6 col-md-4 col-sm-12 col-xl-4 py-4">
             <div class="card h-100 p-2">
               <div class="card-body">
                 <h2 class="card-title ">{{ child.title }}</h2>
                 <p class="card-text">{{ child.subtitle }}</p>
-                <div class="illo-container">
-                  <img src="/static/images/home/png/{{ child.section_id }}.png" class="img-fluid" alt="{{ child.section }}" />
-                </div>
               </div>
-              <a href="{{ child.path|url }}" class="btn btn-primary">{{ child.cta }}</a>
+              <a href="{{ child.path|url }}" class="btn btn-primary">Learn More</a>
             </div>
           </div>
         {% endfor %}
+      </div>
+      <div class="row py-5 text-center mx-auto">
+        <h2 class="display-4 text-primary text-center mx-auto my-3">{{ _('Research') }}</h2>
+        <p class="text-center">
+      {{ _('Many people around the world are doing research on how to improve the Tor design, what\'s going on in the Tor network, and more generally on attacks and defenses for anonymous communication systems. Our research portal holds the resources we provide to help make your Tor research more effective.')}}
+        </p>
+        <a class="btn btn-lg btn-outline-primary mx-auto my-3" href="https://research.torproject.org">
+          {{ _('Research Portal') }}<i class="ml-3 pt-2 fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+          <div class="row py-5 text-center mx-auto">
+        <h2 class="display-4 text-primary text-center mx-auto my-3">{{ _('Project Ideas') }}</h2>
+        <p class="text-center">
+      {{ _('Here you will find some projects that may be good ideas for Outreachy, Google Summer of Code or other internship programs we may participate in in future.')}}
+        </p>
+        <a class="btn btn-lg btn-outline-primary mx-auto my-3" href="/project-ideas">
+          {{ _('Learn More') }}<i class="ml-3 pt-2 fas fa-arrow-right"></i>
+        </a>
       </div>
     </div>
   </section>
