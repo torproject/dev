@@ -1,0 +1,32 @@
+_model: project
+---
+_template: layout.html
+---
+html: project-page.html
+---
+maintained: True
+---
+section: anti-censorship
+---
+section_id: anti-censorship
+---
+color: primary
+---
+key: 1
+---
+languages:
+Python
+---
+maintainers:
+hiro
+---
+title: GetTor
+---
+subtitle:
+ 
+GetTor is a program that presents alternative methods to download Tor Browser, especially when access to Tor Project's official website and mirrors is blocked.
+
+---
+body:
+
+longer text

@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="col-12">
-    {% from "macros/projects.html" import render_active %}
+    {% from "macros/ideas.html" import render_active %}
     {% for child in this.children.filter(F.active == True).all() %}
       <div class="row">
         {{ render_active(child, this.alt) }}

@@ -12,10 +12,12 @@ subtitle: The Network Team is a group of Tor people who are working on the Tor b
 ---
 key: 4
 ---
-html: training.html
+html: team-page.html
 ---
 body:
 
 Welcome to the Network Team page!
+
+## What we do
 
 The Network Team is a group of Tor people who are working on Tor back-end: the program called tor, the network simulators, the scripts that support directory authorities, onion services, etc. Basically, everything that sends and receives bytes from the network.

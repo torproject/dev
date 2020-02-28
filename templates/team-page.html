@@ -1,0 +1,29 @@
+<div class="container py-5">
+  <div class="row py-5">
+    <div class="col-lg-7">
+      {{ this.body }}
+    </div>
+    <div class="col-lg-5">
+      <img src="/static/images/home/png/{{ this.section_id }}.png" class="img-fluid" alt="{{ _(this.section) }}" />
+    </div>
+  </div>
+
+  <div class="row py-5 mx-auto">
+    <h3 class="display-4 text-primary text-left mx-auto">{{ _('Projects') }}</h3>
+    <div class="col-12">
+    {% from "macros/projects.html" import render_active %}
+      {% for child in this.children.filter(F.maintained == True).all() %}
+        {{ render_active(child, this.alt) }}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row py-5 text-center mx-auto">
+    <h2 class="display-4 text-primary text-center mx-auto my-3">{{ _('Join our Mailing List') }}</h2>
+    <p class="text-center">
+      {{ _('Some Text.')}}
+    </p>
+    <a class="btn btn-lg btn-outline-primary mx-auto my-3" href="https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-dev">
+          {{ _('Tor developers mailing list') }}<i class="ml-3 pt-2 fas fa-arrow-right"></i>
+    </a>
+  </div>
+</div>
