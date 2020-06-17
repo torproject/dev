@@ -1,0 +1,32 @@
+_model: project
+---
+_template: layout.html
+---
+html: project-page.html
+---
+maintained: True
+---
+section: anti-censorship
+---
+section_id: anti-censorship
+---
+color: primary
+---
+key: 4
+---
+languages:
+?
+---
+maintainers:
+?
+---
+title: Snowflake
+---
+subtitle:
+
+Some info about snowflake
+
+---
+body:
+
+longer text

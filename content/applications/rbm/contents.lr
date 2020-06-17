@@ -26,7 +26,7 @@ link: https://rbm.torproject.org/
 ---
 subtitle:
 
-Reproducible Build Manager (rbm) is a tool that helps you create and build packages for multiple linux distributions, and automate the parts that can be automated. 
+Reproducible Build Manager (rbm) is a tool that helps you create and build packages for multiple linux distributions, and automate the parts that can be automated.
 
 ---
 body:

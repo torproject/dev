@@ -1,0 +1,32 @@
+_model: project
+---
+_template: layout.html
+---
+html: project-page.html
+---
+maintained: True
+---
+section: metrics
+---
+section_id:  metrics
+---
+color: primary
+---
+key: 1
+---
+languages:
+?
+---
+maintainers:
+?
+---
+title: collector
+---
+subtitle:
+
+Some info about collector
+
+---
+body:
+
+longer text

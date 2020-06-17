@@ -1,0 +1,32 @@
+_model: project
+---
+_template: layout.html
+---
+html: project-page.html
+---
+maintained: True
+---
+section: network
+---
+section_id: network
+---
+color: primary
+---
+key: 2
+---
+languages:
+?
+---
+maintainers:
+?
+---
+title: onionbalance
+---
+subtitle:
+
+Something about onionbalance
+
+---
+body:
+
+longer text

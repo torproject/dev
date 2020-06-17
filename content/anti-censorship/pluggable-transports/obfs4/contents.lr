@@ -1,0 +1,32 @@
+_model: project
+---
+_template: layout.html
+---
+html: project-page.html
+---
+maintained: True
+---
+section: anti-censorship
+---
+section_id: anti-censorship
+---
+color: primary
+---
+key: 3
+---
+languages:
+?
+---
+maintainers:
+?
+---
+title: obfs4
+---
+subtitle:
+
+Some info about obfs4
+
+---
+body:
+
+longer text
