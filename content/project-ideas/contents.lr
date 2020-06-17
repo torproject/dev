@@ -1,12 +1,10 @@
 _template: layout.html
 ---
-_undiscoverable: true
+section: project-ideas
 ---
-section: GSoC
+section_id: project-ideas
 ---
-section_id: gsoc
----
-html: gsoc.html
+html: project-ideas.html
 ---
 color: primary
 ---
