@@ -12,7 +12,7 @@ or browse it [online](http://gitweb.torproject.org/project/web/dev.git).
 
 ## How to report bugs or feedback
 
-First check if your issue wasn't already opened in [dip.torproject.org](https://dip.torproject.org/web/dev/issues), then file a [trac ticket](https://trac.torproject.org/projects/tor/newticket) and choose the component: Webpages/Community.
+Check if your issue wasn't already opened in [gitlab.torproject.org](https://gitlab.torproject.org/web/dev/issues) then open a new bug.
 
 
 ## What is Lektor
