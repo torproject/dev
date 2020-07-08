@@ -51,7 +51,7 @@ To just build the website once: ```$ lektor build -O <folder>```
 
 #### How to develop on the website
 
-Check our [wiki pages](https://dip.torproject.org/tpo/web/dev/wikis/How-to-develop-on-the-website).
+Check our [wiki pages](https://gitlab.torproject.org/tpo/web/dev/wikis/How-to-develop-on-the-website).
 
 ### Translations
 
