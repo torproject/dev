@@ -1,18 +1,18 @@
 # Community portal
 
-This is the repository of Community portal. The current online version of this portal can be found at https://community.torproject.org or [Community Onion Service](http://3gldbgtv5e4god56.onion/).
+This is the repository of Dev portal. The current online version of this portal can be found at https://dev.torproject.org (currently in development).
 
-To clone the code use either of 
+To clone the code use either of
 
 ```git clone https://git.torproject.org/project/web/community.git/```
 
-```torify git clone http://dccbbv6cooddgcrq.onion/project/web/community.git/``` 
+```torify git clone http://dccbbv6cooddgcrq.onion/project/web/community.git/```
 
 or browse it [online](http://gitweb.torproject.org/project/web/community.git).
 
-## How to report bugs or feedback 
+## How to report bugs or feedback
 
-First check if your issue wasn't already opened in [dip.torproject.org](https://dip.torproject.org/web/community/issues), then file a [trac ticket](https://trac.torproject.org/projects/tor/newticket) and choose the component: Webpages/Community. 
+First check if your issue wasn't already opened in [dip.torproject.org](https://dip.torproject.org/web/community/issues), then file a [trac ticket](https://trac.torproject.org/projects/tor/newticket) and choose the component: Webpages/Community.
 
 
 ## What is Lektor
@@ -37,7 +37,7 @@ You can click ```Edit this page``` and submit your content changes in a [Pull Re
 
 ```git clone https://git.torproject.org/project/web/community.git```
 
-4. Init the building blocks submodule: 
+4. Init the building blocks submodule:
 
 ```$ cd lego && git submodule update --init --recursive```
 
@@ -109,5 +109,4 @@ At this point, one of us on the website team will aim to review your PR within 2
   - If there are any front end and/or template changes involved, the changes will be pushed to our `develop` branch for functionality review
   - If there are any fixes necessary, we will ask for changes to be made.
 
-Once it all looks good and behaves correctly, we will merge your request to the master branch of the community portal [canonical repo](https://gitweb.torproject.org/project/web/community.git/) on [gitweb](https://gitweb.torproject.org/) master. 
-
+Once it all looks good and behaves correctly, we will merge your request to the master branch of the community portal [canonical repo](https://gitweb.torproject.org/project/web/community.git/) on [gitweb](https://gitweb.torproject.org/) master.
