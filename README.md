@@ -1,6 +1,6 @@
 # Community portal
 
-This is the repository of Dev portal. The current online version of this portal can be found at https://dev.torproject.org (currently in development).
+This is the repository of Dev portal. 
 
 To clone the code use either of
 
