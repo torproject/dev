@@ -4,15 +4,15 @@ This is the repository of Dev portal. The current online version of this portal 
 
 To clone the code use either of
 
-```git clone https://git.torproject.org/project/web/community.git/```
+```git clone https://git.torproject.org/project/web/dev.git/```
 
-```torify git clone http://dccbbv6cooddgcrq.onion/project/web/community.git/```
+```torify git clone http://dccbbv6cooddgcrq.onion/project/web/dev.git/```
 
-or browse it [online](http://gitweb.torproject.org/project/web/community.git).
+or browse it [online](http://gitweb.torproject.org/project/web/dev.git).
 
 ## How to report bugs or feedback
 
-First check if your issue wasn't already opened in [dip.torproject.org](https://dip.torproject.org/web/community/issues), then file a [trac ticket](https://trac.torproject.org/projects/tor/newticket) and choose the component: Webpages/Community.
+First check if your issue wasn't already opened in [dip.torproject.org](https://dip.torproject.org/web/dev/issues), then file a [trac ticket](https://trac.torproject.org/projects/tor/newticket) and choose the component: Webpages/Community.
 
 
 ## What is Lektor
@@ -25,7 +25,7 @@ Its code can be found at [GitHub](https://github.com/lektor/lektor).
 
 ### (Easy) Edit this page button
 
-You can click ```Edit this page``` and submit your content changes in a [Pull Request in GitHub](https://github.com/torproject/community/pulls).
+You can click ```Edit this page``` and submit your content changes in a [Pull Request in GitHub](https://github.com/torproject/dev/pulls).
 
 ### (Advanced) Compiling a local version of the website
 
@@ -35,7 +35,7 @@ You can click ```Edit this page``` and submit your content changes in a [Pull Re
 
 3. Clone the repository:
 
-```git clone https://git.torproject.org/project/web/community.git```
+```git clone https://git.torproject.org/project/web/dev.git```
 
 4. Init the building blocks submodule:
 
@@ -51,7 +51,7 @@ To just build the website once: ```$ lektor build -O <folder>```
 
 #### How to develop on the website
 
-Check our [wiki pages](https://dip.torproject.org/web/community/wikis/How-to-develop-on-the-website).
+Check our [wiki pages](https://dip.torproject.org/web/dev/wikis/How-to-develop-on-the-website).
 
 ### Translations
 
@@ -68,12 +68,12 @@ If you want to contribute to the Community portal, we will be happy to help you.
 
 This is the workflow that Tor Internal people should use when making changes on the Community Portal:
 
-1. When starting work on an issue or content, please assign the issue to yourself and move into the `Doing` column on the [Community Portal Project Board](https://dip.torproject.org/web/community/-/boards). You can follow the process outlined in ["How to send a merge request or propose a change"](https://dip.torproject.org/web/tpo/wikis/Git-flow-and-merge-requests#how-to-send-a-merge-request-or-propose-a-change) to work on your changes.
+1. When starting work on an issue or content, please assign the issue to yourself and move into the `Doing` column on the [Community Portal Project Board](https://dip.torproject.org/web/dev/-/boards). You can follow the process outlined in ["How to send a merge request or propose a change"](https://dip.torproject.org/web/tpo/wikis/Git-flow-and-merge-requests#how-to-send-a-merge-request-or-propose-a-change) to work on your changes.
 2. To view your changes on the website, you can [run lektor locally](https://dip.torproject.org/web/tpo/wikis/Compiling-a-local-version-of-the-website)
-3. Once you are happy with your work, push your changes to `develop` branch and move to `needs-review` column on the [Community Portal Project Board](https://dip.torproject.org/web/community/-/boards)
+3. Once you are happy with your work, push your changes to `develop` branch and move to `needs-review` column on the [Community Portal Project Board](https://dip.torproject.org/web/dev/-/boards)
 4. Add a comment to the issue, tagging the reviewer, e.g `@steph`, with:
-    - Location of page on lektor-staging `develop` branch, e.g https://lektor-staging.torproject.org/community/develop/
-    - Contents file, containing your changes where it would be located on the **reviewer's repo** e.g `https://dip.torproject.org/steph/community/blob/develop/content/onion-services/contents.lr`
+    - Location of page on lektor-staging `develop` branch, e.g https://lektor-staging.torproject.org/dev/develop/
+    - Contents file, containing your changes where it would be located on the **reviewer's repo** e.g `https://dip.torproject.org/steph/dev/blob/develop/content/onion-services/contents.lr`
     - For the review workflow, please see (Reviewer Workflow)
 5. Once the work has been reviewed and any necessary changes and merge request has been made, a repo maintainer or team members with write access to gitweb master will then merge or cherry-pick these changes to master, following the workflow outlined in [How to use our git flow](https://dip.torproject.org/web/tpo/wikis/Git-flow-and-merge-requests#how-to-use-our-git-flow)
 6. Merger should then move the the ticket to the `Closed` column.
@@ -89,16 +89,16 @@ This is the workflow that Tor Internal people should use when making changes on 
     - Click on "Commit changes"
 4. You will be sent to a new page to create your merge request:
     - Update "Title" with a short title to explain your changes
-    - Update "Description", you can use the commit message you entered before additionally referencing the original issue you have reviewed, e.g `https://dip.torproject.org/web/community/issues/3` and tagging one of the repo maintainers e.g `@pili` so they know the change can be merged
+    - Update "Description", you can use the commit message you entered before additionally referencing the original issue you have reviewed, e.g `https://dip.torproject.org/web/dev/issues/3` and tagging one of the repo maintainers e.g `@pili` so they know the change can be merged
     - Make sure that both "Delete source branch when merge request is accepted" and "Squash commits when merge request is accepted" are checked.
     - Click "Submit merge request"
-5. Reviewer should comment on the original issue with a link to the merge request created, e.g `https://dip.torproject.org/steph/community/merge_requests/2`
+5. Reviewer should comment on the original issue with a link to the merge request created, e.g `https://dip.torproject.org/steph/dev/merge_requests/2`
 
 ### Volunteer Workflow
 
 This is the workflow that external volunteers should use when making changes on the Community Portal:
 
-We recommend that you use our [github mirror](https://github.com/torproject/community) to submit PRs and contributions to our Community repo. Once you have a PR ready you should:
+We recommend that you use our [github mirror](https://github.com/torproject/dev) to submit PRs and contributions to our Community repo. Once you have a PR ready you should:
 
 0. Ideally try to run it locally and check that nothing breaks and everything still behaves as before
 1. Make a PR and ping the team on #tor-www IRC channel to let us know there's a PR waiting for review
@@ -109,4 +109,4 @@ At this point, one of us on the website team will aim to review your PR within 2
   - If there are any front end and/or template changes involved, the changes will be pushed to our `develop` branch for functionality review
   - If there are any fixes necessary, we will ask for changes to be made.
 
-Once it all looks good and behaves correctly, we will merge your request to the master branch of the community portal [canonical repo](https://gitweb.torproject.org/project/web/community.git/) on [gitweb](https://gitweb.torproject.org/) master.
+Once it all looks good and behaves correctly, we will merge your request to the master branch of the dev portal [canonical repo](https://gitweb.torproject.org/project/web/dev.git/) on [gitweb](https://gitweb.torproject.org/) master.
