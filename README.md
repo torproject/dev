@@ -1,6 +1,6 @@
 # Community portal
 
-This is the repository of Dev portal. 
+This is the repository of Dev portal.
 
 To clone the code use either of
 
@@ -51,7 +51,7 @@ To just build the website once: ```$ lektor build -O <folder>```
 
 #### How to develop on the website
 
-Check our [wiki pages](https://dip.torproject.org/web/dev/wikis/How-to-develop-on-the-website).
+Check our [wiki pages](https://dip.torproject.org/tpo/web/dev/wikis/How-to-develop-on-the-website).
 
 ### Translations
 
