@@ -57,7 +57,6 @@ Check our [wiki pages](https://gitlab.torproject.org/tpo/web/dev/wikis/How-to-de
 
 To help us to translate, please join the Tor Project team in [Transifex](https://www.transifex.com/).
 
-
 ### Getting help
 
 If you want to contribute to the Community portal, we will be happy to help you. Join us at #tor-www in [irc.oftc.net](https://www.oftc.net).
