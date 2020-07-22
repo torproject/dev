@@ -1,0 +1,19 @@
+section: advanced tor
+---
+section_id: advanced-tor
+---
+color: primary
+---
+image: eye
+---
+key: 2
+---
+html: two-columns-page.html
+---
+title: Onion Balance
+---
+subtitle: a two lines subtitle
+---
+body:
+
+the content
