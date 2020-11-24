@@ -1,16 +1,16 @@
-section: advanced tor
+section: the tor network
 ---
-section_id: advanced-tor
+section_id: the-tor-network
 ---
 color: primary
 ---
 image: eye
 ---
-key: 2
+key: 3
 ---
 html: two-columns-page.html
 ---
-title: Onion Balance
+title: tor, The tor program
 ---
 subtitle: a two lines subtitle
 ---

@@ -1,19 +1,19 @@
-section: tor ecosystem
+section: tor browser
 ---
-section_id: tor-ecosystem
+section_id: tor-browser
 ---
 color: primary
 ---
-image: eye
----
 key: 1
 ---
-html: two-columns-page.html
+html: section.html
+---
+cta: Call To Action
 ---
 title: Tor Browser
 ---
-subtitle: a two lines subtitle
+subtitle: Tor Browser subtitle
 ---
 body:
 
-the content
+the overview

@@ -6,11 +6,11 @@ color: primary
 ---
 image: eye
 ---
-key: 3
+key: 2
 ---
 html: two-columns-page.html
 ---
-title: Development tools used to help make tor
+title: The Tor Protocol
 ---
 subtitle: a two lines subtitle
 ---

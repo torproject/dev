@@ -6,11 +6,11 @@ color: primary
 ---
 image: eye
 ---
-key: 2
+key: 1
 ---
 html: two-columns-page.html
 ---
-title: Onionshare
+title: Tor Browser
 ---
 subtitle: a two lines subtitle
 ---

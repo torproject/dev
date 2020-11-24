@@ -1,0 +1,19 @@
+section: advanced tor
+---
+section_id: advanced-tor
+---
+color: primary
+---
+image: eye
+---
+key: 2
+---
+html: project.html
+---
+title: OnionBalance
+---
+subtitle: OnionBalance is the best way to load balance onion services across multiple backend Tor instances.
+---
+body:
+
+OnionBalance is the best way to load balance onion services across multiple backend Tor instances. This way the load of introduction and rendezvous requests get distributed across multiple hosts. OnionBalance provides load-balancing while also making onion services more resilient and reliable by eliminating single points-of-failure.

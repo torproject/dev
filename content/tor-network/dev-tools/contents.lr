@@ -6,14 +6,18 @@ color: primary
 ---
 image: eye
 ---
-key: 1
+key: 4
 ---
 html: two-columns-page.html
 ---
-title: The Tor design
+title: Developer Tools
 ---
-subtitle: a two lines subtitle
+subtitle: Development tools used to help make tor
 ---
 body:
 
 the content
+Trunnel
+Chutney
+Other Tor implementations (?)
+How to write a tor client (?)

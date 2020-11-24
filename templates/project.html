@@ -1,41 +1,57 @@
-}}div class="container py-5">
-  <div class="row py-5">
-    <div class="col-lg-7">
-      {{ this.body }}
+
+{% include 'breadcrumb.html' %}
+
+<div class="row">
+  <div class="col-8 mx-auto {{ bag('alternatives', this.alt, 'order') }}">
+    <h3 class="display-3 text-primary mt-5">Onion Balance</h3>
+    <div class="preamble">
+      <p class="">{{ this.body }}</p>
     </div>
-    <div class="col-lg-5">
-      <img src="/static/images/home/png/{{ this.section_id }}.png" class="img-fluid" alt="{{ _(this.section) }}" />
-    </div>
-  </div>
-  <div class="row">
-    {% for child in this.children|sort(attribute='key') %}
-      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
-        <div class="card h-100">
-          <div class="card-body">
-            <div class="card-body">
-              <h4 class="card-title text-primary">
-                <a href="{{ child.path|url(alt=this.alt) }}">{{ _(child.title) }}</a>
-              </h4>
-              <p class="card-text">{{ _(child.subtitle) }}</p>
+
+    <h3 class="my-5">
+      <span class="badge badge-primary p-2">Python</span>
+      <span class="badge badge-primary p-2">C</span>
+      <span class="badge badge-primary p-2">Rust</span>
+    </h3>
+
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title text-primary"><a href="">How to get started</a></h4>
+                    <p class="card-text">Some description here that says what you can find in a repository and something like if you are a developer, doing a fork is a best way to start hacking around.</p>
+                    <a class="btn btn-lg btn-outline-primary mx-auto mt-3" href="#">Read Documentation<i class="ml-3 fas fa-arrow-right"></i></a>
+                </div>
             </div>
-          </div>
         </div>
+        <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title text-primary"><a href="">Open an Issue</a></h4>
+                    <p class="card-text">Are you a user? do you want to report a bug? do you have an amazing feature idea? We love OSS. Open an issue and someone will reply you.</p>
+                    <a class="btn btn-lg btn-outline-primary mx-auto mt-3" href="#">Visit Repository<i class="ml-3 fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+      <div class="row py-5 text-center mx-auto">
+        <h2 class="display-4 text-primary text-center">{{ _('Join the conversation') }}</h2>
+        <p class="text-center">
+          {{ _('Some guidelines here about how to join gitlab and a link to good first issue.') }}
+          <a class="" href="#">{{ _('Go to the link') }}</a>
+        </p>
       </div>
-    {% endfor %}
-  </div>
-  <div class="row py-5 text-center mx-auto">
-      <h2 class="display-4 text-primary text-center mx-auto my-3">{{ _('Tor Speakers Bureau') }}</h2>
-      <p class="text-center">
-      {{ _('We have a dedicated group of Tor core contributors who are ready to speak at your next event. You can request a speaker by contacting speaking@torproject.org with your preferred topic, language requirement, date, and other details.') }}
-      </p>
-      <a class="btn btn-lg btn-outline-primary mx-auto my-3" href="mailto:speaking@torproject.org">
-          {{ _('Request a Speaker') }}<i class="ml-3 pt-2 fas fa-arrow-right"></i>
-    </a>
-  </div>
-  <div class="row py-5 text-center mx-auto">
-    <h2 class="display-4 text-primary text-center mx-auto">{{ _('Upcoming Tor Events') }}</h2>
-    <div class="col-12">
-      {{ render_stream("https://blog.torproject.org/events.xml")|safe }}
+    </section>
+
+    <div class="card mt-5">
+      <ul class="list-group list-group-flush">
+        <!--li class="list-group-item"><a><span class="card-text text-muted">{{ _("Contributors to this page:") }} <a href="#" title="#">cypherpunk</a></span></li-->
+        <li class="list-group-item">
+                <a href="{{ this.parent|url }}">{{ _("Back to previous page: ") }}{{ this.parent.title }}</a> - <a href="https://github.com/torproject/community/edit/master/content{{ this.path }}/contents.lr">{{ _("Edit this page") }}</a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
