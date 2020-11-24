@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-17 20:36+CET\n"
+"POT-Creation-Date: 2020-11-24 19:14+CET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -12,26 +12,919 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: https://dev.torproject.org/ (content/contents+en.lr:page.title)
-msgid "The Tor Ecosystem"
+msgid "The Tor Developers Portal"
 msgstr ""
 
 #: https://dev.torproject.org/ (content/contents+en.lr:page.subtitle)
-msgid "Tor protects you by bounsing your communications around a distributed network of relays run by volunteers all around the world."
+msgid "a subtitle"
 msgstr ""
 
 #: https://dev.torproject.org/ (content/contents+en.lr:page.body)
-msgid "The Tor community is made up of all kinds of contributors."
+msgid "an overview of the portal"
 msgstr ""
 
-#: https://dev.torproject.org/ (content/contents+en.lr:page.body)
-msgid "Some people write documentation and bug reports, while others hold Tor events and conduct outreach."
+#: https://dev.torproject.org/tor-ecosystem/
+#: (content/tor-ecosystem/contents+en.lr:page.title)
+msgid "The Tor Ecosystem"
 msgstr ""
 
-#: https://dev.torproject.org/ (content/contents+en.lr:page.body)
-msgid "Whether you have a lot of time to volunteer or a little, and whether you consider yourself technical or not, we want you to join our community, too."
+#: https://dev.torproject.org/tor-ecosystem/
+#: (content/tor-ecosystem/contents+en.lr:page.subtitle)
+msgid ""
+"Applications that use tor: Ones we maintain, like Tor Browser, and selected "
+"others that we love"
 msgstr ""
 
-#: https://dev.torproject.org/ (content/contents+en.lr:page.body)
-msgid "Below you'll find some different ways to volunteer with the Tor community as well as resources to help you help Tor."
+#: https://dev.torproject.org/tor-ecosystem/
+#: (content/tor-ecosystem/contents+en.lr:page.cta)
+#: https://dev.torproject.org/tor-network/
+#: (content/tor-network/contents+en.lr:page.cta)
+#: https://dev.torproject.org/understanding-tor/
+#: (content/understanding-tor/contents+en.lr:page.cta)
+#: https://dev.torproject.org/tor-ecosystem/tor-browser/
+#: (content/tor-ecosystem/tor-browser/contents+en.lr:page.cta)
+msgid "Call To Action"
 msgstr ""
 
+#: https://dev.torproject.org/tor-ecosystem/
+#: (content/tor-ecosystem/contents+en.lr:page.body)
+#: https://dev.torproject.org/observing-tor/
+#: (content/observing-tor/contents+en.lr:page.body)
+#: https://dev.torproject.org/tor-network/
+#: (content/tor-network/contents+en.lr:page.body)
+#: https://dev.torproject.org/understanding-tor/
+#: (content/understanding-tor/contents+en.lr:page.body)
+#: https://dev.torproject.org/hacking-on-tor/
+#: (content/hacking-on-tor/contents+en.lr:page.body)
+#: https://dev.torproject.org/manage-tor/
+#: (content/manage-tor/contents+en.lr:page.body)
+#: https://dev.torproject.org/fighting-censorship/
+#: (content/fighting-censorship/contents+en.lr:page.body)
+#: https://dev.torproject.org/tor-ecosystem/tor-browser/
+#: (content/tor-ecosystem/tor-browser/contents+en.lr:page.body)
+msgid "the overview"
+msgstr ""
+
+#: https://dev.torproject.org/tor-ecosystem/
+#: (content/tor-ecosystem/contents+en.lr:page.body)
+msgid ">>>>>>> anto/master"
+msgstr ""
+
+#: https://dev.torproject.org/project-ideas/
+#: (content/project-ideas/contents+en.lr:page.title)
+msgid "Project Ideas"
+msgstr ""
+
+#: https://dev.torproject.org/project-ideas/
+#: (content/project-ideas/contents+en.lr:page.subtitle)
+msgid "Some project ideas for GSoC."
+msgstr ""
+
+#: https://dev.torproject.org/project-ideas/
+#: (content/project-ideas/contents+en.lr:page.cta)
+msgid "Get coding"
+msgstr ""
+
+#: https://dev.torproject.org/project-ideas/
+#: (content/project-ideas/contents+en.lr:page.body)
+msgid ""
+"You may find some of these projects to be good ideas for Google Summer of "
+"Code. We have labelled each idea with which of our core developers would be "
+"good mentors. If one or more of these ideas looks promising to you, please "
+"[contact us](mailto:gso+c@torproject.org) to discuss your plans rather than "
+"sending blind applications."
+msgstr ""
+
+#: https://dev.torproject.org/observing-tor/
+#: (content/observing-tor/contents+en.lr:page.title)
+msgid "Observing the Tor network"
+msgstr ""
+
+#: https://dev.torproject.org/observing-tor/
+#: (content/observing-tor/contents+en.lr:page.subtitle)
+msgid "Tools for researching, inspecting and managing the tor network"
+msgstr ""
+
+#: https://dev.torproject.org/observing-tor/
+#: (content/observing-tor/contents+en.lr:page.cta)
+#: https://dev.torproject.org/hacking-on-tor/
+#: (content/hacking-on-tor/contents+en.lr:page.cta)
+#: https://dev.torproject.org/manage-tor/
+#: (content/manage-tor/contents+en.lr:page.cta)
+#: https://dev.torproject.org/fighting-censorship/
+#: (content/fighting-censorship/contents+en.lr:page.cta)
+msgid "Call to Action"
+msgstr ""
+
+#: https://dev.torproject.org/tor-network/
+#: (content/tor-network/contents+en.lr:page.title)
+msgid "The Tor Network"
+msgstr ""
+
+#: https://dev.torproject.org/tor-network/
+#: (content/tor-network/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/understanding-tor/
+#: (content/understanding-tor/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/tor-ecosystem/onionshare/
+#: (content/tor-ecosystem/onionshare/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/observing-tor/sbws/
+#: (content/observing-tor/sbws/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/observing-tor/exitscanner/
+#: (content/observing-tor/exitscanner/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/observing-tor/metrics/
+#: (content/observing-tor/metrics/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/tor-network/tor/
+#: (content/tor-network/tor/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/tor-network/tor-protocol/
+#: (content/tor-network/tor-protocol/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/tor-network/tor-design/
+#: (content/tor-network/tor-design/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/hacking-on-tor/research/
+#: (content/hacking-on-tor/research/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/hacking-on-tor/writing-documentation/
+#: (content/hacking-on-tor/writing-documentation/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/hacking-on-tor/hacking-tor/
+#: (content/hacking-on-tor/hacking-tor/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/manage-tor/nyx/
+#: (content/manage-tor/nyx/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/fighting-censorship/ooni/
+#: (content/fighting-censorship/ooni/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/fighting-censorship/get-tor/
+#: (content/fighting-censorship/get-tor/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/fighting-censorship/pluggable-transports/
+#: (content/fighting-censorship/pluggable-transports/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/fighting-censorship/bridges/
+#: (content/fighting-censorship/bridges/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/tor-ecosystem/tor-browser/tor-browser/
+#: (content/tor-ecosystem/tor-browser/tor-browser/contents+en.lr:page.subtitle)
+#: https://dev.torproject.org/tor-ecosystem/tor-browser/tor-browser-android/
+#: (content/tor-ecosystem/tor-browser/tor-browser-android/contents+en.lr:page.subtitle)
+msgid "a two lines subtitle"
+msgstr ""
+
+#: https://dev.torproject.org/understanding-tor/
+#: (content/understanding-tor/contents+en.lr:page.title)
+msgid "Understanding Tor"
+msgstr ""
+
+#: https://dev.torproject.org/hacking-on-tor/
+#: (content/hacking-on-tor/contents+en.lr:page.title)
+msgid "Hacking Tor"
+msgstr ""
+
+#: https://dev.torproject.org/hacking-on-tor/
+#: (content/hacking-on-tor/contents+en.lr:page.subtitle)
+msgid "How can I help?"
+msgstr ""
+
+#: https://dev.torproject.org/manage-tor/
+#: (content/manage-tor/contents+en.lr:page.title)
+msgid "Manage Tor"
+msgstr ""
+
+#: https://dev.torproject.org/manage-tor/
+#: (content/manage-tor/contents+en.lr:page.subtitle)
+msgid ""
+"Managing your tor installation. helpful tools for the advanced relay or "
+"onion service operator"
+msgstr ""
+
+#: https://dev.torproject.org/metrics/
+#: (content/metrics/contents+en.lr:page.title)
+msgid "Metrics Team"
+msgstr ""
+
+#: https://dev.torproject.org/metrics/
+#: (content/metrics/contents+en.lr:page.subtitle)
+msgid ""
+"The Metrics Team is a group of Tor people who care about measuring and "
+"analyzing things in the public Tor network."
+msgstr ""
+
+#: https://dev.torproject.org/metrics/
+#: (content/metrics/contents+en.lr:page.body)
+msgid "Welcome to the Metrics Team page!"
+msgstr ""
+
+#: https://dev.torproject.org/metrics/
+#: (content/metrics/contents+en.lr:page.body)
+msgid ""
+"The Metrics Team is a group of Tor people who care about measuring and "
+"analyzing things in the public Tor network. If you're interested in "
+"measurements and analyses, the Metrics Team is what you're looking for. "
+"Welcome!"
+msgstr ""
+
+#: https://dev.torproject.org/fighting-censorship/
+#: (content/fighting-censorship/contents+en.lr:page.title)
+msgid "Fighting Censorship"
+msgstr ""
+
+#: https://dev.torproject.org/fighting-censorship/
+#: (content/fighting-censorship/contents+en.lr:page.subtitle)
+msgid "Deliver Tor to censored users"
+msgstr ""
+
+#: https://dev.torproject.org/network/
+#: (content/network/contents+en.lr:page.title)
+msgid "Network Team"
+msgstr ""
+
+#: https://dev.torproject.org/network/
+#: (content/network/contents+en.lr:page.subtitle)
+msgid ""
+"The Network Team is a group of Tor people who are working on the Tor back-"
+"end."
+msgstr ""
+
+#: https://dev.torproject.org/network/
+#: (content/network/contents+en.lr:page.body)
+msgid "Welcome to the Network Team page!"
+msgstr ""
+
+#: https://dev.torproject.org/network/
+#: (content/network/contents+en.lr:page.body)
+msgid "## What we do"
+msgstr ""
+
+#: https://dev.torproject.org/network/
+#: (content/network/contents+en.lr:page.body)
+msgid ""
+"The Network Team is a group of Tor people who are working on Tor back-end: "
+"the program called tor, the network simulators, the scripts that support "
+"directory authorities, onion services, etc. Basically, everything that sends "
+"and receives bytes from the network."
+msgstr ""
+
+#: https://dev.torproject.org/anti-censorship/
+#: (content/anti-censorship/contents+en.lr:page.title)
+msgid "Anti-Censorship Team"
+msgstr ""
+
+#: https://dev.torproject.org/anti-censorship/
+#: (content/anti-censorship/contents+en.lr:page.subtitle)
+msgid ""
+"The anti-censorship team is a group of Tor people who make Tor reachable "
+"anywhere in the world."
+msgstr ""
+
+#: https://dev.torproject.org/anti-censorship/
+#: (content/anti-censorship/contents+en.lr:page.body)
+msgid "Welcome to the anti-censorship team page!"
+msgstr ""
+
+#: https://dev.torproject.org/anti-censorship/
+#: (content/anti-censorship/contents+en.lr:page.body)
+msgid ""
+"The anti-censorship team is a group of Tor people who make Tor reachable "
+"anywhere in the world. We analyze censorship attempts and develop technology "
+"to work around these censorship attempts."
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.title)
+msgid "Network Health Team"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.subtitle)
+msgid ""
+"The Network Health Team coordinates network performance and scalability work "
+"as well as other network health related tasks."
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "Welcome to the Network Health Team page!"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "The team was created on January 2020 and it works on these five areas:"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "1. track community standards about what makes a good relay"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- publish up-to-date expectations for relay operators"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- set best practices for how to set relay families"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- detect and resolve bad relays"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- exitmap, sybil detection, hsdir traps"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "2. anomaly analysis / network health engineer [with network team]"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- establish baselines of expected network behavior"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- look for and resolve denial of service issues"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- track connectivity issues between relays"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- look for relays hitting resource limits"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "3. make sure usage/growth stats are collected and accurate"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- track network performance, relay diversity by various metrics"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- count users [with network team and metrics team]"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- monitor bridge growth and usage [with censorship team]"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "4. relay advocacy [with community team]"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- maintain docs for setting up and running relays and bridges"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- grow a cohesive community of relay operators so they have peers"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- keep relays on the right tor versions"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid ""
+"- relaunch a gamification / badge system for lauding good relay progress"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- strengthen relationships with non-profit orgs that run relays"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- help companies that want to offset their tor network load"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "5. maintain the components of the network"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- maintain directory authority relationships"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid ""
+"- keep bandwidth authorities working (including setting the right balance "
+"between speed and location diversity)"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid ""
+"- have enough tor browser default bridges, and keep them running smoothly "
+"[with censorship team]"
+msgstr ""
+
+#: https://dev.torproject.org/network-health/
+#: (content/network-health/contents+en.lr:page.body)
+msgid "- update the fallbackdirs list"
+msgstr ""
+
+#: https://dev.torproject.org/applications/
+#: (content/applications/contents+en.lr:page.title)
+msgid "Applications Team"
+msgstr ""
+
+#: https://dev.torproject.org/applications/
+#: (content/applications/contents+en.lr:page.subtitle)
+msgid ""
+"The Applications Team is a group of Tor people who are working on different "
+"user facing products."
+msgstr ""
+
+#: https://dev.torproject.org/applications/
+#: (content/applications/contents+en.lr:page.body)
+msgid "Welcome to the Applications Team page."
+msgstr ""
+
+#: https://dev.torproject.org/applications/
+#: (content/applications/contents+en.lr:page.body)
+msgid ""
+"The Applications Team is a group of Tor people who are working on different "
+"user facing products: Tor Browser, Tor Messenger, Tor Mail, Orbot etc."
+msgstr ""
+
+#: https://dev.torproject.org/tor-ecosystem/tor-browser/
+#: (content/tor-ecosystem/tor-browser/contents+en.lr:page.title)
+#: https://dev.torproject.org/tor-ecosystem/tor-browser/tor-browser/
+#: (content/tor-ecosystem/tor-browser/tor-browser/contents+en.lr:page.title)
+msgid "Tor Browser"
+msgstr ""
+
+#: https://dev.torproject.org/tor-ecosystem/tor-browser/
+#: (content/tor-ecosystem/tor-browser/contents+en.lr:page.subtitle)
+msgid "Tor Browser subtitle"
+msgstr ""
+
+#: https://dev.torproject.org/tor-ecosystem/onionshare/
+#: (content/tor-ecosystem/onionshare/contents+en.lr:page.title)
+msgid "Onionshare"
+msgstr ""
+
+#: https://dev.torproject.org/tor-ecosystem/onionshare/
+#: (content/tor-ecosystem/onionshare/contents+en.lr:page.body)
+#: https://dev.torproject.org/observing-tor/sbws/
+#: (content/observing-tor/sbws/contents+en.lr:page.body)
+#: https://dev.torproject.org/observing-tor/exitscanner/
+#: (content/observing-tor/exitscanner/contents+en.lr:page.body)
+#: https://dev.torproject.org/observing-tor/metrics/
+#: (content/observing-tor/metrics/contents+en.lr:page.body)
+#: https://dev.torproject.org/tor-network/tor/
+#: (content/tor-network/tor/contents+en.lr:page.body)
+#: https://dev.torproject.org/tor-network/tor-protocol/
+#: (content/tor-network/tor-protocol/contents+en.lr:page.body)
+#: https://dev.torproject.org/tor-network/dev-tools/
+#: (content/tor-network/dev-tools/contents+en.lr:page.body)
+#: https://dev.torproject.org/tor-network/tor-design/
+#: (content/tor-network/tor-design/contents+en.lr:page.body)
+#: https://dev.torproject.org/hacking-on-tor/research/
+#: (content/hacking-on-tor/research/contents+en.lr:page.body)
+#: https://dev.torproject.org/hacking-on-tor/writing-documentation/
+#: (content/hacking-on-tor/writing-documentation/contents+en.lr:page.body)
+#: https://dev.torproject.org/hacking-on-tor/hacking-tor/
+#: (content/hacking-on-tor/hacking-tor/contents+en.lr:page.body)
+#: https://dev.torproject.org/manage-tor/nyx/
+#: (content/manage-tor/nyx/contents+en.lr:page.body)
+#: https://dev.torproject.org/fighting-censorship/ooni/
+#: (content/fighting-censorship/ooni/contents+en.lr:page.body)
+#: https://dev.torproject.org/fighting-censorship/get-tor/
+#: (content/fighting-censorship/get-tor/contents+en.lr:page.body)
+#: https://dev.torproject.org/fighting-censorship/pluggable-transports/
+#: (content/fighting-censorship/pluggable-transports/contents+en.lr:page.body)
+#: https://dev.torproject.org/fighting-censorship/bridges/
+#: (content/fighting-censorship/bridges/contents+en.lr:page.body)
+#: https://dev.torproject.org/tor-ecosystem/tor-browser/tor-browser/
+#: (content/tor-ecosystem/tor-browser/tor-browser/contents+en.lr:page.body)
+#: https://dev.torproject.org/tor-ecosystem/tor-browser/tor-browser-android/
+#: (content/tor-ecosystem/tor-browser/tor-browser-android/contents+en.lr:page.body)
+msgid "the content"
+msgstr ""
+
+#: https://dev.torproject.org/observing-tor/sbws/
+#: (content/observing-tor/sbws/contents+en.lr:page.title)
+msgid "SBWS"
+msgstr ""
+
+#: https://dev.torproject.org/observing-tor/exitscanner/
+#: (content/observing-tor/exitscanner/contents+en.lr:page.title)
+msgid "Exitscanner"
+msgstr ""
+
+#: https://dev.torproject.org/observing-tor/metrics/
+#: (content/observing-tor/metrics/contents+en.lr:page.title)
+msgid "Metrics"
+msgstr ""
+
+#: https://dev.torproject.org/tor-network/tor/
+#: (content/tor-network/tor/contents+en.lr:page.title)
+msgid "tor, The tor program"
+msgstr ""
+
+#: https://dev.torproject.org/tor-network/tor-protocol/
+#: (content/tor-network/tor-protocol/contents+en.lr:page.title)
+msgid "The Tor Protocol"
+msgstr ""
+
+#: https://dev.torproject.org/tor-network/dev-tools/
+#: (content/tor-network/dev-tools/contents+en.lr:page.title)
+msgid "Developer Tools"
+msgstr ""
+
+#: https://dev.torproject.org/tor-network/dev-tools/
+#: (content/tor-network/dev-tools/contents+en.lr:page.subtitle)
+msgid "Development tools used to help make tor"
+msgstr ""
+
+#: https://dev.torproject.org/tor-network/dev-tools/
+#: (content/tor-network/dev-tools/contents+en.lr:page.body)
+msgid "Trunnel"
+msgstr ""
+
+#: https://dev.torproject.org/tor-network/dev-tools/
+#: (content/tor-network/dev-tools/contents+en.lr:page.body)
+msgid "Chutney"
+msgstr ""
+
+#: https://dev.torproject.org/tor-network/dev-tools/
+#: (content/tor-network/dev-tools/contents+en.lr:page.body)
+msgid "Other Tor implementations (?)"
+msgstr ""
+
+#: https://dev.torproject.org/tor-network/dev-tools/
+#: (content/tor-network/dev-tools/contents+en.lr:page.body)
+msgid "How to write a tor client (?)"
+msgstr ""
+
+#: https://dev.torproject.org/tor-network/tor-design/
+#: (content/tor-network/tor-design/contents+en.lr:page.title)
+msgid "The Tor design"
+msgstr ""
+
+#: https://dev.torproject.org/hacking-on-tor/research/
+#: (content/hacking-on-tor/research/contents+en.lr:page.title)
+msgid "research.torproject.org"
+msgstr ""
+
+#: https://dev.torproject.org/hacking-on-tor/writing-documentation/
+#: (content/hacking-on-tor/writing-documentation/contents+en.lr:page.title)
+msgid "Writing dev documentation"
+msgstr ""
+
+#: https://dev.torproject.org/hacking-on-tor/hacking-tor/
+#: (content/hacking-on-tor/hacking-tor/contents+en.lr:page.title)
+msgid "Hacking on Tor Software"
+msgstr ""
+
+#: https://dev.torproject.org/manage-tor/onion-balance/
+#: (content/manage-tor/onion-balance/contents+en.lr:page.title)
+msgid "OnionBalance"
+msgstr ""
+
+#: https://dev.torproject.org/manage-tor/onion-balance/
+#: (content/manage-tor/onion-balance/contents+en.lr:page.subtitle)
+msgid ""
+"OnionBalance is the best way to load balance onion services across multiple "
+"backend Tor instances."
+msgstr ""
+
+#: https://dev.torproject.org/manage-tor/onion-balance/
+#: (content/manage-tor/onion-balance/contents+en.lr:page.body)
+msgid ""
+"OnionBalance is the best way to load balance onion services across multiple "
+"backend Tor instances. This way the load of introduction and rendezvous "
+"requests get distributed across multiple hosts. OnionBalance provides load-"
+"balancing while also making onion services more resilient and reliable by "
+"eliminating single points-of-failure."
+msgstr ""
+
+#: https://dev.torproject.org/manage-tor/nyx/
+#: (content/manage-tor/nyx/contents+en.lr:page.title)
+msgid "Nyx"
+msgstr ""
+
+#: https://dev.torproject.org/fighting-censorship/ooni/
+#: (content/fighting-censorship/ooni/contents+en.lr:page.title)
+msgid "OONI"
+msgstr ""
+
+#: https://dev.torproject.org/fighting-censorship/get-tor/
+#: (content/fighting-censorship/get-tor/contents+en.lr:page.title)
+msgid "Get Tor"
+msgstr ""
+
+#: https://dev.torproject.org/fighting-censorship/pluggable-transports/
+#: (content/fighting-censorship/pluggable-transports/contents+en.lr:page.title)
+msgid "Pluggable Transports"
+msgstr ""
+
+#: https://dev.torproject.org/fighting-censorship/bridges/
+#: (content/fighting-censorship/bridges/contents+en.lr:page.title)
+msgid "Bridges"
+msgstr ""
+
+#: https://dev.torproject.org/tor-ecosystem/tor-browser/tor-browser-android/
+#: (content/tor-ecosystem/tor-browser/tor-browser-android/contents+en.lr:page.title)
+msgid "Tor Browser for Android"
+msgstr ""
+
+#: lego/templates/banner.html:3 lego/templates/banner.html:5
+#: templates/banner.html:3 templates/banner.html:5
+msgid "Close banner"
+msgstr ""
+
+#: lego/templates/banner.html:11 templates/banner.html:11
+msgid "Use a Mask, Use Tor."
+msgstr ""
+
+#: lego/templates/banner.html:20 templates/banner.html:20
+msgid "Resist the surveillance pandemic."
+msgstr ""
+
+#: lego/templates/banner.html:32 templates/banner.html:32
+msgid "Your donation will be matched by Friends of Tor, up to $100,000."
+msgstr ""
+
+#: lego/templates/banner.html:38 lego/templates/footer.html:64
+#: lego/templates/footer.html:66 lego/templates/navbar.html:19
+#: lego/templates/navbar.html:21 templates/banner.html:38
+#: templates/footer.html:64 templates/footer.html:66 templates/navbar.html:19
+#: templates/navbar.html:21
+msgid "Donate Now"
+msgstr ""
+
+#: lego/templates/banner.html:40 templates/banner.html:40
+msgid "DONATE NOW"
+msgstr ""
+
+#: lego/templates/footer.html:13 lego/templates/footer.html:22
+#: lego/templates/navbar.html:84 templates/footer.html:13
+#: templates/footer.html:22 templates/navbar.html:84
+msgid "Download Tor Browser"
+msgstr ""
+
+#: lego/templates/footer.html:14 templates/footer.html:14
+msgid ""
+"Download Tor Browser to experience real private browsing without tracking, "
+"surveillance, or censorship."
+msgstr ""
+
+#: lego/templates/footer.html:35 templates/footer.html:35
+msgid "Our mission:"
+msgstr ""
+
+#: lego/templates/footer.html:36 templates/footer.html:36
+msgid ""
+"To advance human rights and freedoms by creating and deploying free and open "
+"source anonymity and privacy technologies, supporting their unrestricted "
+"availability and use, and furthering their scientific and popular "
+"understanding."
+msgstr ""
+
+#: lego/templates/footer.html:64 lego/templates/footer.html:66
+#: lego/templates/navbar.html:19 lego/templates/navbar.html:21
+#: templates/footer.html:64 templates/footer.html:66 templates/navbar.html:19
+#: templates/navbar.html:21
+msgid "Donate"
+msgstr ""
+
+#: lego/templates/footer.html:75 templates/footer.html:75
+msgid "Subscribe to our Newsletter"
+msgstr ""
+
+#: lego/templates/footer.html:76 templates/footer.html:76
+msgid "Get monthly updates and opportunities from the Tor Project:"
+msgstr ""
+
+#: lego/templates/footer.html:77 templates/footer.html:77
+msgid "Sign up"
+msgstr ""
+
+#: lego/templates/footer.html:98 templates/footer.html:98
+#, python-format
+msgid ""
+"Trademark, copyright notices, and rules for use by third parties can be "
+"found in our %(link_to_faq)s"
+msgstr ""
+
+#: lego/templates/navbar.html:26 templates/navbar.html:26
+msgid "Menu"
+msgstr ""
+
+#: lego/templates/search.html:5
+msgid "Search"
+msgstr ""
+
+#: lego/templates/secure-connections.html:1
+msgid ""
+"The following visualization shows what information is visible to "
+"eavesdroppers with and without Tor Browser and HTTPS encryption:"
+msgstr ""
+
+#: lego/templates/secure-connections.html:4
+msgid ""
+"Click the “Tor” button to see what data is visible to observers when you're "
+"using Tor. The button will turn green to indicate that Tor is on."
+msgstr ""
+
+#: lego/templates/secure-connections.html:5
+msgid ""
+"Click the “HTTPS” button to see what data is visible to observers when "
+"you're using HTTPS. The button will turn green to indicate that HTTPS is on."
+msgstr ""
+
+#: lego/templates/secure-connections.html:6
+msgid ""
+"When both buttons are green, you see the data that is visible to observers "
+"when you are using both tools."
+msgstr ""
+
+#: lego/templates/secure-connections.html:7
+msgid ""
+"When both buttons are grey, you see the data that is visible to observers "
+"when you don't use either tool."
+msgstr ""
+
+#: lego/templates/secure-connections.html:11
+msgid "HTTPS"
+msgstr ""
+
+#: lego/templates/secure-connections.html:15
+#: lego/templates/secure-connections.html:65
+msgid "Tor"
+msgstr ""
+
+#: lego/templates/secure-connections.html:32
+msgid "POTENTIALLY VISIBLE DATA"
+msgstr ""
+
+#: lego/templates/secure-connections.html:37
+msgid "Site.com"
+msgstr ""
+
+#: lego/templates/secure-connections.html:40
+msgid "The site being visited."
+msgstr ""
+
+#: lego/templates/secure-connections.html:44
+msgid "user / pw"
+msgstr ""
+
+#: lego/templates/secure-connections.html:47
+msgid "Username and password used for authentication."
+msgstr ""
+
+#: lego/templates/secure-connections.html:51
+msgid "data"
+msgstr ""
+
+#: lego/templates/secure-connections.html:54
+msgid "Data being transmitted."
+msgstr ""
+
+#: lego/templates/secure-connections.html:58
+msgid "location"
+msgstr ""
+
+#: lego/templates/secure-connections.html:61
+msgid ""
+"Network location of the computer used to visit the website (the public IP "
+"address)."
+msgstr ""
+
+#: lego/templates/secure-connections.html:68
+msgid "Whether or not Tor is being used."
+msgstr ""
+
+#: templates/home.html:23 templates/project-page.html:23
+msgid "Research"
+msgstr ""
+
+#: templates/home.html:25 templates/project-page.html:25
+msgid ""
+"Many people around the world are doing research on how to improve the Tor "
+"design, what's going on in the Tor network, and more generally on attacks "
+"and defenses for anonymous communication systems. Our research portal holds "
+"the resources we provide to help make your Tor research more effective."
+msgstr ""
+
+#: templates/home.html:28 templates/project-page.html:28
+msgid "Research Portal"
+msgstr ""
+
+#: templates/home.html:35 templates/project-page.html:35
+msgid ""
+"Here you will find some projects that may be good ideas for Outreachy, "
+"Google Summer of Code or other internship programs we may participate in in "
+"future."
+msgstr ""
+
+#: templates/home.html:38 templates/project-page.html:38
+msgid "Learn More"
+msgstr ""
+
+#: templates/home.html:45
+msgid "Become a Tor Developer"
+msgstr ""
+
+#: templates/home.html:47
+msgid ""
+"Some guidelines here about how to join gitlab and a link to good first issue"
+msgstr ""
+
+#: templates/home.html:49 templates/project.html:43
+msgid "Go to the link"
+msgstr ""
+
+#: templates/meta.html:3
+msgid ""
+"Defend yourself against tracking and surveillance. Circumvent censorship."
+msgstr ""
+
+#: templates/meta.html:7
+msgid "Tor Project"
+msgstr ""
+
+#: templates/project-ideas.html:22
+msgid ""
+"None of these ideas seem appealing? You may also want to propose your own "
+"project idea — which often results in the best projects."
+msgstr ""
+
+#: templates/project-ideas.html:22
+msgid "We invite you to contact us to discuss your own project idea."
+msgstr ""
+
+#: templates/project.html:40
+msgid "Join the conversation"
+msgstr ""
+
+#: templates/project.html:42
+msgid ""
+"Some guidelines here about how to join gitlab and a link to good first issue."
+msgstr ""
+
+#: templates/project.html:50 templates/two-columns-page.html:27
+msgid "Contributors to this page:"
+msgstr ""
+
+#: templates/project.html:52 templates/two-columns-page.html:29
+msgid "Back to previous page: "
+msgstr ""
+
+#: templates/project.html:52 templates/two-columns-page.html:29
+msgid "Edit this page"
+msgstr ""
+
+#: templates/team-page.html:12
+msgid "Projects"
+msgstr ""
+
+#: templates/team-page.html:21
+msgid "Join our Mailing List"
+msgstr ""
+
+#: templates/team-page.html:23
+msgid "Some Text."
+msgstr ""
+
+#: templates/team-page.html:26
+msgid "Tor developers mailing list"
+msgstr ""
+
+#: templates/training.html:27
+msgid "Join the Community"
+msgstr ""
+
+#: templates/training.html:29
+msgid ""
+"Are you interested in inviting someone from Tor to train your group? While "
+"we receive a high volume of training requests and may not be able to offer "
+"an in-person training, we may still be able to help. Contact the community "
+"team and let's talk."
+msgstr ""
+
+#: templates/training.html:32
+msgid "Community mailing list"
+msgstr ""
+
+#: templates/macros/ideas.html:20
+msgid "Read more."
+msgstr ""
