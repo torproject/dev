@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-24 19:14+CET\n"
+"POT-Creation-Date: 2020-11-25 15:28+CET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -813,43 +813,16 @@ msgstr ""
 msgid "Whether or not Tor is being used."
 msgstr ""
 
-#: templates/home.html:23 templates/project-page.html:23
-msgid "Research"
-msgstr ""
-
-#: templates/home.html:25 templates/project-page.html:25
-msgid ""
-"Many people around the world are doing research on how to improve the Tor "
-"design, what's going on in the Tor network, and more generally on attacks "
-"and defenses for anonymous communication systems. Our research portal holds "
-"the resources we provide to help make your Tor research more effective."
-msgstr ""
-
-#: templates/home.html:28 templates/project-page.html:28
-msgid "Research Portal"
-msgstr ""
-
-#: templates/home.html:35 templates/project-page.html:35
-msgid ""
-"Here you will find some projects that may be good ideas for Outreachy, "
-"Google Summer of Code or other internship programs we may participate in in "
-"future."
-msgstr ""
-
-#: templates/home.html:38 templates/project-page.html:38
-msgid "Learn More"
-msgstr ""
-
-#: templates/home.html:45
+#: templates/home.html:25
 msgid "Become a Tor Developer"
 msgstr ""
 
-#: templates/home.html:47
+#: templates/home.html:27
 msgid ""
 "Some guidelines here about how to join gitlab and a link to good first issue"
 msgstr ""
 
-#: templates/home.html:49 templates/project.html:43
+#: templates/home.html:29 templates/project.html:43
 msgid "Go to the link"
 msgstr ""
 
@@ -870,6 +843,33 @@ msgstr ""
 
 #: templates/project-ideas.html:22
 msgid "We invite you to contact us to discuss your own project idea."
+msgstr ""
+
+#: templates/project-page.html:23
+msgid "Research"
+msgstr ""
+
+#: templates/project-page.html:25
+msgid ""
+"Many people around the world are doing research on how to improve the Tor "
+"design, what's going on in the Tor network, and more generally on attacks "
+"and defenses for anonymous communication systems. Our research portal holds "
+"the resources we provide to help make your Tor research more effective."
+msgstr ""
+
+#: templates/project-page.html:28
+msgid "Research Portal"
+msgstr ""
+
+#: templates/project-page.html:35
+msgid ""
+"Here you will find some projects that may be good ideas for Outreachy, "
+"Google Summer of Code or other internship programs we may participate in in "
+"future."
+msgstr ""
+
+#: templates/project-page.html:38
+msgid "Learn More"
 msgstr ""
 
 #: templates/project.html:40
