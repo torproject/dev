@@ -1,26 +1,9 @@
-<<<<<<< HEAD
-section: tor-ecosystem
-=======
 section: tor ecosystem
->>>>>>> anto/master
 ---
 section_id: tor-ecosystem
 ---
 color: primary
 ---
-<<<<<<< HEAD
-_template: layout.html
----
-title: Tor Ecosystem
----
-subtitle: Here are some other organisations and teams that form part of the wider Tor Ecosystem
----
-key: 6
----
-html: training.html
----
-body:
-=======
 key: 6
 ---
 html: section.html
@@ -34,4 +17,3 @@ subtitle: Applications that use tor: Ones we maintain, like Tor Browser, and sel
 body:
 
 the overview
->>>>>>> anto/master
