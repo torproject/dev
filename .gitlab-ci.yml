@@ -1,7 +1,7 @@
+---
 variables:
-  SITE_URL: "dev.torproject.org"
-  TRANSLATION_BRANCH: "dev-portal"
-  SUBDIR: "public"
+  SITE_URL: dev.torproject.org
+  TRANSLATION_BRANCH: dev-portal
 
 include:
   - project: tpo/tpa/ci-templates
