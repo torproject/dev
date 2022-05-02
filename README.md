@@ -70,7 +70,7 @@ This is the workflow that Tor Internal people should use when making changes on 
 1. When starting work on an issue or content, please assign the issue to yourself and move into the `Doing` column on the [Community Portal Project Board](https://gitlab.torproject.org/web/dev/-/boards). You can follow the process outlined in ["How to send a merge request or propose a change"](https://gitlab.torproject.org/web/tpo/wikis/Git-flow-and-merge-requests#how-to-send-a-merge-request-or-propose-a-change) to work on your changes.
 2. To view your changes on the website, you can [run lektor locally](https://gitlab.torproject.org/web/tpo/wikis/Compiling-a-local-version-of-the-website)
 3. Once you are happy with your work, push your changes to `develop` branch and move to `needs-review` column on the [Community Portal Project Board](https://gitlab.torproject.org/web/dev/-/boards)
-4. Add a comment to the issue, tagging the reviewer, e.g `@hiro`, with:
+4. Add a comment to the issue, tagging the reviewer, e.g `@kez`, with:
     - Location of page on lektor-staging `develop` branch, e.g https://lektor-staging.torproject.org/dev/develop/
     - Contents file, containing your changes where it would be located on the **reviewer's repo** e.g `https://gitlab.torproject.org/steph/dev/blob/develop/content/onion-services/contents.lr`
     - For the review workflow, please see (Reviewer Workflow)
