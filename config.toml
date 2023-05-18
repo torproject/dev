@@ -1,0 +1,216 @@
+# Basic URL and title declaration
+baseURL = "/"
+title = "Tor Dev Docs"
+
+# Language-related config
+defaultContentLanguage = "en"
+languageCode = "en-us"
+defaultContentLanguageInSubdir = true
+
+# Set default directory names for Hugo
+archetypeDir = "archetypes"
+contentDir = "content"
+dataDir = "data"
+layoutDir = "layouts"
+publishDir = "public"
+
+# Build content that is draft or has a future publication date
+buildDrafts  = false
+buildFuture  = false
+buildExpored = false
+
+# Canonify URLs https://gohugo.io/content-management/urls/#canonical-urls
+canonifyURLs = true
+
+# Enable robots.txt usage
+enableRobotsTXT = true
+
+# Enable getting information from git regarding commits and changes
+enableGitInfo = false
+
+# Enable emoji rendering
+enableEmoji = true
+
+# Replace missing translations with a placeholder
+enableMissingTranslationPlaceholders = false
+
+# Enable or disable RSS feed generation
+disableRSS = false
+
+# Limit RSS feed items, not applicable to normal content
+rssLimit = 300
+
+# Enable or disable sitemap generation
+disableSitemap = false
+
+# Enable or disable 404 page
+disable404 = false
+
+# Prevent Hugo from injecting its meta tag in the HTML head on home page https://gohugo.io/getting-started/configuration/#disablehugogeneratorinject
+disableHugoGeneratorInject = true
+
+# Prevent list.html pages from automatically having their titles pluralized
+pluralizeListTitles = false
+
+[permalinks]
+# blog = "/blog/:filename/"
+
+# Set content author
+[author]
+  name = "Tor Project"
+  email = "frontdesk@torproject.org"
+
+# Markup configuration, related to ToC generation
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3 
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+
+# Set default naming convention for the tags and categories
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Custom parameters that are used throughout the project
+[params]
+  reportTitle = "United Apple"
+  reportSubtitle = "Apple’s censorship and compromises in Russia"
+  
+  dateform        = "May 3, 2023"
+  dateformShort   = "May 3"
+  dateformNum     = "2023-05-03"
+  dateformNumTime = "2023-05-03 16:30"
+
+  # Metadata mostly used in document's head
+  description = ""
+  keywords = ""
+  images = ["img/default.png"]
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = "https://gitlab.com/XX/XXX/commit/"
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS = []
+  customJS  = []
+
+  # Colors for favicons
+  [params.favicon.color]
+    mask = "#9F47D1"
+    msapplication = "#9F47D1"
+
+# i18n
+[languages]
+  [languages.en]
+    languageName = "English"
+    contentDir = "content/en"
+    subtitle  = ""
+    weight    = 1
+  [[languages.en.menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "https://www.torproject.org/about/history/"
+    weight     = "1"
+  [[languages.en.menu.main]]
+    identifier = "support"
+    name       = "Support"
+    url        = "https://support.torproject.org/"
+    weight     = "2"
+  [[languages.en.menu.main]]
+    identifier = "community"
+    name       = "Community"
+    url        = "https://community.torproject.org/"
+    weight     = "3"
+  [[languages.en.menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "https://blog.torproject.org"
+    weight     = "4"
+  [[languages.en.menu.main]]
+    identifier = "donate"
+    name       = "Donate"
+    url        = "https://donate.torproject.org"
+    weight     = "5"
+  [[languages.en.menu.footer]]
+    identifier = "source"
+    name       = "Source Code"
+    url        = "/source"
+    weight     = "1"
+  [[languages.en.menu.footer]]
+    identifier = "privacy-policy"
+    name       = "Privacy Policy"
+    url        = "/privacy"
+    weight     = "2"
+  [[languages.en.menu.footer]]
+    identifier = "imprint"
+    name       = "Imprint"
+    url        = "/imprint"
+    weight     = "3"
+
+  [languages.de]
+    languageName = "Deutsch"
+    contentDir = "content/de"
+    subtitle  = ""
+    weight    = 1
+  [[languages.de.menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "https://www.torproject.org/about/history/"
+    weight     = "1"
+  [[languages.de.menu.main]]
+    identifier = "support"
+    name       = "Support"
+    url        = "https://support.torproject.org/"
+    weight     = "2"
+  [[languages.de.menu.main]]
+    identifier = "community"
+    name       = "Community"
+    url        = "https://community.torproject.org/"
+    weight     = "3"
+  [[languages.de.menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "https://blog.torproject.org"
+    weight     = "4"
+  [[languages.de.menu.main]]
+    identifier = "donate"
+    name       = "Donate"
+    url        = "https://donate.torproject.org"
+    weight     = "5"
+  [[languages.de.menu.footer]]
+    identifier = "source"
+    name       = "Source Code"
+    url        = "/source"
+    weight     = "1"
+  [[languages.de.menu.footer]]
+    identifier = "privacy-policy"
+    name       = "Privacy Policy"
+    url        = "/privacy"
+    weight     = "2"
+  [[languages.de.menu.footer]]
+    identifier = "imprint"
+    name       = "Imprint"
+    url        = "/imprint"
+    weight     = "3"
+
+# Improve privacy when embedding content from 3rd parties
+[privacy]
+  [privacy.instagram]
+    disable = false
+    simple = true
+  [privacy.twitter]
+    disable = false
+    enableDNT = true
+    simple = true
+  [privacy.vimeo]
+    disable = false
+    enableDNT = true
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true
