@@ -1,0 +1,18 @@
+<nav id="nav-bar" class="nav mt-3" aria-label="Primary">
+  <div class="nav_list">
+  {{- $firstUrlElement := print "/" (index (split .RelPermalink "/") 2) "/" -}}
+  {{- $secondUrlElement := print (index (split .RelPermalink "/") 3) -}}
+  <a class="nav_link text-uppercase home_link {{ if .IsHome }}active{{ else }}{{ end }}" {{ if .IsHome }}aria-current="page" {{ end }} href="{{ .Site.BaseURL }}">Home {{ partial "fontawesome.html" "regular/house" }}</a>
+  {{ range .Site.Sections }}
+  {{- $currentURL := print "/" (index (split .RelPermalink "/") 2) "/" -}}
+    <details {{ if eq ($firstUrlElement|lower) ($currentURL) }}open{{ end }}>
+        <summary class="text-uppercase {{ if eq ($firstUrlElement|lower) ($currentURL) }}fw-semibold{{ end }}">{{ .Page.Params.title }} {{ partial "fontawesome.html" "solid/chevron-down" }}</summary>
+        {{ range .RegularPages }}
+        <a class="nav_link {{ if eq ($secondUrlElement|lower) (.File.BaseFileName) }}active{{ end }}" {{ if eq
+          ($secondUrlElement|lower) (.File.BaseFileName) }}aria-current="page" {{ end }} href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ end }}
+    </details>
+  {{ end }}
+  </div>
+</nav>
+

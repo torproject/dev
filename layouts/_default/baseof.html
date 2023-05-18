@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="{{ .Site.Language }}" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body>
+    <svg id="fader" class="fade-out"></svg>
+    <script>fadeInPage()</script>
+
+    <a class="screen-reader-text" href="#content">Skip to content</a>
+
+    <header class="sticky-top d-lg-block d-none">
+        <nav class="navbar navbar-expand-lg navbar-dark py-2 px-5">
+            <a class="navbar-brand" href="https://torproject.org/en/">
+                <img alt="The Tor Project" src="/img/logo.png"
+                    width="80px" />
+            </a>
+
+            <div class="collapse navbar-collapse">
+                <div class="mx-auto">
+                    <ul class="navbar-nav">
+                        {{- $firstUrlElement := print "/" (index (split .RelPermalink "/") 1) "/" -}}
+                        {{- range .Site.Menus.main -}}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ .URL }}" rel="noopener noreferrer" target="_blank">{{ .Name }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+
+                <div class="pull-right">
+                    <a class="btn btn-outline-light pull-right" href="https://torproject.org/download/">
+                        Download Tor Browser<i class="fas fa-arrow-down ml-2 pt-1"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid mx-0">
+
+        <div class="row">
+            <div class="col-lg-2 mx-0 px-5 py-lg-5 py-1 left-sidebar">
+                {{ partial "header.html" . }}
+            </div>
+
+            <div class="col-lg-9 offset-lg-2 col-12 px-0">
+                <!-- <header class="background-banner">
+                    <div class="container py-3">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-7 col-lg-7 col-md-12 col-12 pt-5">
+                                <h1 class="report-title">Your guide to Tor Documentation</h1>
+                                <p class="report-subtitle">Find resources and documentation to get started building for
+                                    Tor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </header> -->
+
+                <div class="row justify-content-center mx-lg-0 mx-5">
+                    <div class="col-lg-6 pt-5">
+                        <div id="content" class="content" data-bs-spy="scroll" data-bs-target="#TableOfContents">
+                            {{ block "main" . }}
+                            {{ end }}
+        
+                            {{ partial "footer.html" . }}
+                            {{ partial "javascript.html" . }}
+                        </div>
+                    </div>
+                    <div class="col-lg-2 offset-lg-1 pt-5">
+                        {{ .TableOfContents }}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

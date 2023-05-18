@@ -1,0 +1,48 @@
+# Translations for German
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+# Generic
+[translations]
+other = "Translations"
+
+[postAvailable]
+other = "Also available in"
+
+[skipLink]
+other = "Skip to content"
+
+[previous]
+other = "Previous"
+
+[next]
+other = "Next"
+
+[toggle]
+other = "Toggle Theme"
+
+# Footer
+
+# 404.html
+[404Title]
+other = "Nothing to see here. Yet."
+
+[notFound]
+other = "Oops, page not found…"
+
+# posts/single.html
+[readingTime]
+one   = "1 min read"
+other = "{{ .Count }} min read"
+
+[tableOfContents]
+other = "Table of Contents"
+
+[wordCount]
+one   = "One Word"
+other = "{{ .Count }} Words"
+
+[publishDate]
+other = "Published on"
+
+[updatedOn]
+other = "last updated on"

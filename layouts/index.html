@@ -1,0 +1,8 @@
+{{ define "main" }}
+    <article>
+        <h2 class="text-uppercase pb-3">Contents</h2>
+        {{ range .Site.RegularPages }}
+        <a class="toc-header d-block" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ end }}
+    </article>
+{{ end }}

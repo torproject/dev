@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-7 col-md-12 col-12 py-5 text-center">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                        </svg>
+                    </p>
+                    <div>
+                        <h1>404</h1>
+                        <p>Page not Found</p>
+                        <p>
+                            <a href="{{.Site.BaseURL | relLangURL }}">Home</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</main>
+{{ end }}

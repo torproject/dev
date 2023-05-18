@@ -1,0 +1,55 @@
+{{ partial "mobile.html" .}}
+
+<div class="d-none d-lg-block">
+
+  <div class="input-group mb-5">
+    <span class="input-group-text" id="basic-addon1">{{ partial "fontawesome.html" "solid/magnifying-glass" }}</span>
+    <input type="text" class="form-control" placeholder="Search Documentation" aria-label="Search Documentation" aria-describedby="basic-addon1">
+  </div>
+  
+  {{ partial "menu.html" . }}
+
+  <button id="theme-toggle" class="themetoggle mt-auto" aria-label="Toggle Dark Theme">
+    <span class="moon" aria-hidden="true">{{ partial "fontawesome.html" "solid/moon" }}</span> <span class="sun" aria-hidden="true">{{ partial "fontawesome.html" "solid/sun" }}</span><span class="hidden-text moon">Dark Theme</span><span class="hidden-text sun">Light Theme</span>
+  </button>
+  
+  <script>
+    let theme = localStorage.getItem("data-theme");
+    const themeToggle = document.querySelector("#theme-toggle");
+    const mobileToggle = document.querySelector("#mobile-toggle");
+  
+    const changeThemeToDark = () => {
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("data-theme", "dark");
+    };
+  
+    const changeThemeToLight = () => {
+      document.documentElement.setAttribute("data-theme", "light");
+      localStorage.setItem("data-theme", "light");
+    };
+  
+    if (theme === "dark") {
+      changeThemeToDark();
+    }
+  
+    themeToggle.addEventListener("click", () => {
+      let theme = localStorage.getItem("data-theme");
+      if (theme === "dark") {
+        changeThemeToLight();
+      } else {
+        changeThemeToDark();
+      }
+    });
+  
+    mobileToggle.addEventListener("click", () => {
+      let theme = localStorage.getItem("data-theme");
+      if (theme === "dark") {
+        changeThemeToLight();
+      } else {
+        changeThemeToDark();
+      }
+    });
+  </script>
+
+</div>
+
