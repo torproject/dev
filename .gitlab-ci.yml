@@ -5,7 +5,7 @@ variables:
 include:
   - project: tpo/tpa/ci-templates
     file:
-      - pages.yml
+      - pages-deploy.yml
 
 build:
   image: registry.gitlab.com/pages/hugo/hugo_extended
