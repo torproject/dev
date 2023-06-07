@@ -5,7 +5,7 @@ variables:
 include:
   - project: tpo/tpa/ci-templates
     file:
-      - static-shim-deploy.yml
+      - pages.yml
 
 build:
   image: registry.gitlab.com/pages/hugo/hugo_extended
