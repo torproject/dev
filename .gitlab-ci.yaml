@@ -1,0 +1,17 @@
+---
+variables:
+  STAGING_URL: blog.staging.torproject.net
+
+include:
+  - project: tpo/tpa/ci-templates
+    file:
+      - static-shim-deploy.yml
+
+build:
+  image: registry.gitlab.com/pages/hugo/hugo_extended
+  stage: build
+  script:
+    - hugo
+  artifacts:
+    paths:
+      - public
