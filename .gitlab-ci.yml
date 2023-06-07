@@ -1,6 +1,6 @@
 ---
 variables:
-  STAGING_URL: blog.staging.torproject.net
+  STAGING_URL: dev.staging.torproject.net
 
 include:
   - project: tpo/tpa/ci-templates
