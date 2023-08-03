@@ -34,7 +34,7 @@ other = "Oops, page not found…"
 one   = "1 min read"
 other = "{{ .Count }} min read"
 
-[tableOfContents]
+[TableOfContents]
 other = "Table of Contents"
 
 [wordCount]

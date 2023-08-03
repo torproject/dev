@@ -1,6 +1,7 @@
 +++
 title = "Why We Need Tor"
 weight = 2
+toc = true
 +++
 
 At its heart, HTML is a language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? part of a table?),  structure a document into logical sections (Does it have a header? Three columns of content?)
