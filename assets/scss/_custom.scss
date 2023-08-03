@@ -1,6 +1,6 @@
 :root,
 [data-theme="light"] {
-  --toggle: #{$primary};
+  --toggle: #{$white};
   --background-color: #{$white};
   --primary-bg: #{$primary};
   --text-color: #{$gray-800};
@@ -708,6 +708,7 @@ figcaption {
 @media screen and (max-width: 992px) {
   .left-sidebar {
     position: relative;
+    background-color: #441565;
   }
   .post-content .table {
     overflow-x: auto;
