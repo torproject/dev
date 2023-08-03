@@ -1,5 +1,5 @@
 # Basic URL and title declaration
-baseURL = "/"
+baseURL = ""
 title = "Tor Dev Docs"
 
 # Language-related config
@@ -109,6 +109,7 @@ pluralizeListTitles = false
   [languages.en]
     languageName = "English"
     contentDir = "content/en"
+  [languages.en.params]
     subtitle  = ""
     weight    = 1
   [[languages.en.menu.main]]
@@ -155,8 +156,9 @@ pluralizeListTitles = false
   [languages.de]
     languageName = "Deutsch"
     contentDir = "content/de"
+  [languages.de.params]
     subtitle  = ""
-    weight    = 1
+    weight    = 2
   [[languages.de.menu.main]]
     identifier = "about"
     name       = "About"

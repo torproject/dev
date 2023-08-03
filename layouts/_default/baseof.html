@@ -12,10 +12,9 @@
     <a class="screen-reader-text" href="#content">Skip to content</a>
 
     <header class="sticky-top d-lg-block d-none">
-        <nav class="navbar navbar-expand-lg navbar-dark py-2 px-5">
+        <nav class="navbar navbar-expand-lg navbar-dark py-2 px-2 px-lg-5">
             <a class="navbar-brand" href="https://torproject.org/en/">
-                <img alt="The Tor Project" src="/img/logo.png"
-                    width="80px" />
+                <img src="{{ .Site.BaseURL }}/img/tor-logo.png" alt="Tor Project logo" width="80px">
             </a>
 
             <div class="collapse navbar-collapse">
@@ -46,7 +45,7 @@
                 {{ partial "header.html" . }}
             </div>
 
-            <div class="col-lg-9 offset-lg-2 col-12 px-0">
+            <div class="col-lg-10 offset-lg-2 col-12 px-0">
                 <!-- <header class="background-banner">
                     <div class="container py-3">
                         <div class="row justify-content-center">
@@ -59,8 +58,21 @@
                     </div>
                 </header> -->
 
-                <div class="row justify-content-center mx-lg-0 mx-5">
-                    <div class="col-lg-6 pt-5">
+                {{ if eq .Params.toc true }}
+
+                <div class="dropdown d-block d-lg-none sticky-top mb-4 pt-2">
+                    <button class="dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      {{ i18n "TableOfContents"}} {{ partial "fontawesome.html" "solid/chevron-down" }}
+                    </button>
+                    <div class="dropdown-menu">
+                        {{ .TableOfContents }}
+                    </div>
+                </div>
+
+                {{ end }}
+
+                <div class="row justify-content-center mx-lg-0 mx-2">
+                    <div class="col-lg-5 pt-5">
                         <div id="content" class="content" data-bs-spy="scroll" data-bs-target="#TableOfContents">
                             {{ block "main" . }}
                             {{ end }}
@@ -68,10 +80,11 @@
                             {{ partial "footer.html" . }}
                             {{ partial "javascript.html" . }}
                         </div>
+                        <div class="col-lg-2 offset-lg-1 pt-5 d-lg-block d-none">
+                            {{ .TableOfContents }}
+                        </div>
                     </div>
-                    <div class="col-lg-2 offset-lg-1 pt-5">
-                        {{ .TableOfContents }}
-                    </div>
+
                 </div>
 
             </div>

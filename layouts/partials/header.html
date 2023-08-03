@@ -1,6 +1,6 @@
 {{ partial "mobile.html" .}}
 
-<div class="d-none d-lg-block">
+<div class="d-none d-lg-block h-100">
 
   <div class="input-group mb-5">
     <span class="input-group-text" id="basic-addon1">{{ partial "fontawesome.html" "solid/magnifying-glass" }}</span>
@@ -9,9 +9,9 @@
   
   {{ partial "menu.html" . }}
 
-  <button id="theme-toggle" class="themetoggle mt-auto" aria-label="Toggle Dark Theme">
+  <!-- <button id="theme-toggle" class="themetoggle mt-auto" aria-label="Toggle Dark Theme">
     <span class="moon" aria-hidden="true">{{ partial "fontawesome.html" "solid/moon" }}</span> <span class="sun" aria-hidden="true">{{ partial "fontawesome.html" "solid/sun" }}</span><span class="hidden-text moon">Dark Theme</span><span class="hidden-text sun">Light Theme</span>
-  </button>
+  </button> -->
   
   <script>
     let theme = localStorage.getItem("data-theme");
