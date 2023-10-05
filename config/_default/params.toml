@@ -1,0 +1,112 @@
+# Meta Data for SEO
+
+## Homepage
+title = "Tor Developer Docs"
+titleSeparator = "-"
+titleAddition = "Documentation for the Tor Project developers"
+description = "#"
+
+## Documentation
+# docsVersion = "0.1"
+
+## Open Graph
+images = ["tor-logo.png"]
+ogLocale = "en_US"
+domainTLD = "dev.torproject.org"
+titleHome = "Tor Developers Docs"
+
+## Twitter Cards
+twitterSite = "@torproject"
+twitterCreator = "@toproject"
+
+## JSON-LD
+# schemaType = "Person"
+schemaType = "Organization"
+schemaName = "Tor Project"
+schemaAuthor = "Tor Project"
+schemaAuthorTwitter = "https://twitter.com/torproject"
+schemaAuthorLinkedIn = "https://www.linkedin.com/company/tor-project/"
+schemaAuthorGitHub = "https://gitlab.torproject.org"
+schemaLocale = "en-US"
+schemaLogo = "tor-logo.png"
+schemaLogoWidth = 512
+schemaLogoHeight = 512
+schemaImage = "tor-logo.png"
+schemaImageWidth = 1280
+schemaImageHeight = 640
+schemaTwitter = "https://twitter.com/torproject"
+schemaLinkedIn = ""
+schemaGitHub = "https://gitlab.torproject.org"
+schemaSection = "blog"
+
+## Sitelinks Search Box
+siteLinksSearchBox = true
+
+## Chrome Browser
+themeColor = "#7e4798"
+
+# Images
+quality = 90
+bgColor = "#fff"
+landscapePhotoWidths = [900, 800, 700, 600, 500]
+portraitPhotoWidths = [800, 700, 600, 500]
+lqipWidth = "20x"
+smallLimit = "300"
+
+# Images
+imageResponsive = true
+imageConvertTo = "webp"
+imageImageSizes = ["480","720","1080","1280","1600","2048"]
+singleSize = false
+imageAddClass = "img-fluid lazyload blur-up"
+
+### Image template
+defaultImage = "default-image.png" # put in `./assets/images/`
+fillImage = "1270x740 Center" # normalize image size
+
+# Footer
+footer = "Powered by <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>"
+
+# Feed
+copyRight = "Copyright (c) 2023 Tor Project"
+
+# Alert
+alert = false
+alertDismissable = true
+alertText = "Introducing the new Tor Developer Docs website! <a class=\"alert-link stretched-link\" href=\"https://torproject.org/\" target=\"_blank\" rel=\"noopener\">Check out new website</a>"
+
+# Edit Page
+# repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
+repoHost = "GitLab"
+docsRepo = "https://gitlab.torproject.org/tpo/web/dev"
+docsRepoBranch = "main"
+docsRepoSubPath = ""
+editPage = true
+lastMod = true
+
+[sections]
+  sectionNav = ["docs", "guides"]
+
+[options]
+  lazySizes = true
+  clipBoard = true
+  instantPage = true
+  flexSearch = true
+  searchSectionsShow = []
+  searchSectionsIndex = []
+  darkMode = false
+  bootStrapJs = true
+  breadCrumb = true
+  highLight = true
+  kaTex = false
+  multilingualMode = false
+  docsVersioning = false
+  fullWidth = true
+  navbarSticky = true
+  toTopButton = false
+  scrollSpy = true
+
+[menu]
+  [menu.section]
+    auto = true
+    collapsibleSidebar = true
