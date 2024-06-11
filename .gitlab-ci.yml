@@ -5,21 +5,18 @@ variables:
 build:
   image: debian:stable-slim
   stage: build
+  before_script:
+    - apt update && apt-get install --no-install-recommends -y hugo
   script:
-    - apt update && apt-get install --no-install-recommends -y git hugo
     - hugo
   artifacts:
     paths:
       - public
 
 pages:
-  image: debian:stable-slim
+  extends: build
   stage: deploy
-  script:
-    - apt update && apt-get install --no-install-recommends -y git hugo
     - hugo --baseURL $CI_PAGES_URL
-  artifacts:
-    paths:
-      - public
+  artifacts: ~
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
