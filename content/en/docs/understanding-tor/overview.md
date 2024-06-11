@@ -2,6 +2,7 @@
 title = "Overview"
 weight = 1
 toc = true
+contributors = []
 +++
 
 A two-minute video explaining what Tor is and how it works. This video is available for download and streaming both on Tor Project website and via YouTube in many different languages.
@@ -16,4 +17,4 @@ Groups such as Indymedia recommend Tor for safeguarding their members' online pr
 
 A branch of the U.S. Navy uses Tor for open source intelligence gathering, and one of its teams used Tor while deployed in the Middle East recently. Law enforcement uses Tor for visiting or surveilling web sites without leaving government IP addresses in their web logs, and for security during sting operations.
 
-The variety of people who use Tor is actually part of what makes it so secure. Tor hides you among the other users on the network, so the more populous and diverse the user base for Tor is, the more your anonymity will be protected. 
+The variety of people who use Tor is actually part of what makes it so secure. Tor hides you among the other users on the network, so the more populous and diverse the user base for Tor is, the more your anonymity will be protected.
