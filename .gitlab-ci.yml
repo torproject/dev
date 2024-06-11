@@ -3,20 +3,22 @@ variables:
   STAGING_URL: dev.staging.torproject.net
 
 build:
-  image: debian:stable-slim
+  image: docker.io/node:latest
   stage: build
-  before_script:
-    - apt update && apt-get install --no-install-recommends -y hugo
   script:
-    - hugo
+    - npm install
+    - npm run build
   artifacts:
     paths:
       - public
 
 pages:
-  extends: build
+  image: docker.io/node:latest
   stage: deploy
   script:
-    - hugo --baseURL $CI_PAGES_URL
+    - npm run build -- --baseURL $CI_PAGES_URL
+  artifacts:
+    paths:
+      - public
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
