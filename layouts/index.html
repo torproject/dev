@@ -1,8 +1,44 @@
 {{ define "main" }}
-    <article>
-        <h2 class="text-uppercase pb-3">Contents</h2>
-        {{ range .Site.RegularPages }}
-        <a class="toc-header d-block" href="{{ .RelPermalink }}">{{ .Title }}</a>
-        {{ end }}
-    </article>
+<section class="section container-fluid mt-n3 pb-3">
+  <div class="row justify-content-center">
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+  {{ if eq $.Site.Language.LanguageName "English" }}
+  <section class="section section-sm mt-n3 pb-3">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-7">
+          <h1 class="h4">Your guide to {{ .Title }}</h1>
+          <p>Find resources and documentation to get started building for Tor.</p>
+          <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}understanding-tor/overview/" role="button">{{ i18n "get-started" }}</a>
+        </div>
+        <div class="col-lg-7 d-none d-lg-block">
+          <img class="img-fluid" src="/images/hero.png" alt="Hero image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-sm mt-n3 pb-3">
+    <div class="container">
+      <div class="row justify-content-start align-items-center">
+        <div class="col-lg-7">
+          <h2 class="h4 text-uppercase">Featured Topics</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+
+{{ define "sidebar-footer" }}
+<section class="section section-sm container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9">
+      {{- .Content -}}
+    </div>
+  </div>
+</section>
 {{ end }}

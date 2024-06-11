@@ -1,0 +1,2 @@
+{{ $format := default "January 2, 2006" .Format -}}
+{{ return (.Date.Format $format) -}}
