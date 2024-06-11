@@ -271,7 +271,7 @@ h6 {
 
   100% {
     opacity: 1;
-  }
+  }  
 }
 
 .nav_logo,
@@ -341,12 +341,9 @@ details summary {
   margin-block: 1.25rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
   & .inline-svg {
     top: 0;
-    width: 1em;
-    height: 1em;
   }
 }
 
@@ -387,6 +384,7 @@ details[open] summary svg {
   & ul {
     list-style: none;
     border-left: 2px solid var(--border);
+    margin-left: 2rem;
     padding-left: 1rem;
   }
   & li {
@@ -649,9 +647,29 @@ figcaption {
   }
 }
 
-.git {
-  a {
-    color: $blue-700;
+// Twitter
+.twitter-tweet {
+  font-family: "Source Sans Pro" !important;
+  color: var(--text-color) !important;
+  border-left: 0.5rem solid #2b7bb9 !important;
+  position: relative;
+
+  & a {
+    color: var(--link-color) !important;
+
+    &:visited {
+      color: #a78bfa;
+    }
+  }
+
+  &:after {
+    content: var(--twitter-icon);
+    width: 3.5rem;
+    height: 3.5rem;
+    opacity: 0.2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
 

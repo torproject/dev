@@ -26,7 +26,7 @@ canonifyURLs = true
 enableRobotsTXT = true
 
 # Enable getting information from git regarding commits and changes
-enableGitInfo = true
+enableGitInfo = false
 
 # Enable emoji rendering
 enableEmoji = true
@@ -78,10 +78,13 @@ pluralizeListTitles = false
 
 # Custom parameters that are used throughout the project
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
+  reportTitle = "United Apple"
+  reportSubtitle = "Apple’s censorship and compromises in Russia"
+  
+  dateform        = "May 3, 2023"
+  dateformShort   = "May 3"
+  dateformNum     = "2023-05-03"
+  dateformNumTime = "2023-05-03 16:30"
 
   # Metadata mostly used in document's head
   description = ""
@@ -89,9 +92,7 @@ pluralizeListTitles = false
   images = ["img/default.png"]
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  gitUrl = "https://gitlab.torproject.org/tpo/web/dev/-/commit/"
-  GitRepo = "https://gitlab.torproject.org/tpo/web/dev/"
-  GitRepoBranch = "main"
+  # gitUrl = "https://gitlab.com/XX/XXX/commit/"
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
