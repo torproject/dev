@@ -15,6 +15,7 @@ pages:
   image: registry.gitlab.com/pages/hugo/hugo_extended
   stage: deploy
   script:
+    - echo $CI_PAGES_URL
     - hugo --baseURL $CI_PAGES_URL
   artifacts:
     paths:
