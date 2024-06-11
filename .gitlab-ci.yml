@@ -16,6 +16,7 @@ build:
 pages:
   extends: build
   stage: deploy
+  script:
     - hugo --baseURL $CI_PAGES_URL
   artifacts: ~
   rules:
