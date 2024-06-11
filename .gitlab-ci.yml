@@ -18,6 +18,5 @@ pages:
   stage: deploy
   script:
     - hugo --baseURL $CI_PAGES_URL
-  artifacts: ~
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
