@@ -3,19 +3,20 @@ variables:
   STAGING_URL: dev.staging.torproject.net
 
 build:
-  image: registry.gitlab.com/pages/hugo/hugo_extended
+  image: debian:stable-slim
   stage: build
   script:
+    - apt update && apt-get install --no-install-recommends -y git hugo
     - hugo
   artifacts:
     paths:
       - public
 
 pages:
-  image: registry.gitlab.com/pages/hugo/hugo_extended
+  image: debian:stable-slim
   stage: deploy
   script:
-    - echo $CI_PAGES_URL
+    - apt update && apt-get install --no-install-recommends -y git hugo
     - hugo --baseURL $CI_PAGES_URL
   artifacts:
     paths:
