@@ -2,11 +2,6 @@
 variables:
   STAGING_URL: dev.staging.torproject.net
 
-include:
-  - project: tpo/tpa/ci-templates
-    file:
-      - pages-deploy.yml
-
 build:
   image: registry.gitlab.com/pages/hugo/hugo_extended
   stage: build
@@ -15,3 +10,14 @@ build:
   artifacts:
     paths:
       - public
+
+pages:
+  image: registry.gitlab.com/pages/hugo/hugo_extended
+  stage: deploy
+  script:
+    - hugo --baseURL $CI_PAGES_URL
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
