@@ -16,6 +16,7 @@ pages:
   image: docker.io/node:latest
   stage: deploy
   script:
+    - npm install
     - npm run build -- --baseURL $CI_PAGES_URL
   artifacts:
     paths:
