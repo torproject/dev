@@ -1,0 +1,74 @@
+{{ define "main" }}
+	<div class="row flex-xl-nowrap justify-content-lg-between">
+		<div class="col-lg-5 col-xl-4 docs-sidebar{{ if ne .Site.Params.options.navbarSticky true }} docs-sidebar-top{{ end }} d-none d-lg-block">
+			{{- $showFlexSearch := .Site.Params.options.flexSearch }}
+			{{- if $showFlexSearch }}
+			{{- if and (isset .Site.Params.options "searchsectionsshow") (not (eq .Site.Params.options.searchSectionsShow "ALL")) }}
+			{{- $showFlexSearch = or (eq (len .Site.Params.options.searchSectionsShow) 0) (in .Site.Params.options.searchSectionsShow .Section) (and .IsHome (in .Site.Params.options.searchSectionsShow "HomePage")) }}
+			{{- end }}
+			{{- end }}
+
+			{{ if $showFlexSearch -}}
+			<hr class="text-black-50 my-4 d-lg-none">
+			<form class="doks-search show-script position-relative flex-grow-1 ms-lg-auto me-lg-2 mt-3">
+			<input id="search" class="form-control is-search" type="search" placeholder="{{ i18n "search-text" }}" aria-label="{{ i18n "search-text" }}" autocomplete="off">
+			<div id="suggestions" class="shadow bg-white rounded d-none"></div>
+			</form>
+
+			<noscript>
+				<form method="get" class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2 mt-3" action="https://duckduckgo.com/">
+					<input id="search" class="form-control is-search" type="search" placeholder="{{ i18n "search-text" }}" aria-label="{{ i18n "search-text" }}" autocomplete="off" name="q">
+					<input type="hidden" name="sites" value="docs.torproject.org"/>
+				</form>
+			</noscript>
+			{{ end -}}
+			
+			<nav {{ if eq .Site.Params.menu.section.collapsibleSidebar false }}id="sidebar-default" {{ end }}class="docs-links" aria-label="Main navigation">
+				{{ partial "sidebar/docs-menu.html" . }}
+			</nav>
+		</div>
+		{{ if ne .Params.toc false -}}
+		<nav class="docs-toc{{ if ne .Site.Params.options.navbarSticky true }} docs-toc-top{{ end }} d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			{{ partial "sidebar/docs-toc.html" . }}
+		</nav>
+		{{ end -}}
+		{{ if .Params.toc -}}
+		<main class="docs-content col-lg-6 col-xl{{ if eq .Site.Params.options.fullWidth false }}-5{{ else }}-6{{ end }}">
+		{{ else -}}
+		<main class="docs-content col-lg-11 col-xl-11 mx-xl-auto">
+		{{ end -}}
+			{{ if .Site.Params.options.breadCrumb -}}
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						{{ partial "main/breadcrumb" . -}}
+						<li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+					</ol>
+				</nav>
+			{{ end }}
+			<h1>{{ .Title }}</h1>
+			<p class="lead">{{ .Params.lead | safeHTML }}</p>
+			{{ if ne .Params.toc false -}}
+			<nav class="d-xl-none" aria-label="Quaternary navigation">
+				{{ partial "sidebar/docs-toc.html" . }}
+			</nav>
+			{{ end -}}
+			{{ .Content }}
+			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+				{{ if .Site.Params.lastMod -}}
+					{{ partial "main/last-modified.html" . }}
+				{{ end -}}
+				{{ if .Site.Params.editPage -}}
+					{{ partial "main/edit-page.html" . }}
+				{{ end -}}
+			</div>
+			{{ partial "main/docs-navigation.html" . }}
+			<!--
+			{{ if not .Site.Params.options.collapsibleSidebar -}}
+				{{ partial "main/docs-navigation.html" . }}
+			{{ else -}}
+				<div class="my-n3"></div>
+			{{ end -}}
+			-->
+		</main>
+	</div>
+{{ end }}

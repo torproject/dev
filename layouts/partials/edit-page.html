@@ -1,0 +1,19 @@
+
+{{ $parts := slice .Site.Params.GitRepo }}
+{{ $parts = $parts | append "-/blob" .Site.Params.GitRepoBranch }}
+
+{{ $filePath := replace .File.Path "\\" "/" }}
+
+{{ $parts = $parts | append "content" .Lang $filePath }}
+
+{{ $url := delimit $parts "/" }}
+
+<h4 class="mb-3 mt-5"><strong>Content information</strong></h4>
+
+<div class="git">
+    <p class="git-edit mb-0"><a href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ partial "fontawesome.html" "regular/pencil" }} Edit this page on GitLab</a></p>
+    {{- if .GitInfo }}
+    <p class="git-hash mb-0"><a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener" title="Commit message: {{ .GitInfo.Subject}}">{{ partial "fontawesome.html" "solid/code-commit" }} Commit hash: {{ .GitInfo.AbbreviatedHash }}</a></p>
+    <p class="git-lastedit">{{ partial "fontawesome.html" "solid/clock" }} Last edited on: {{ if .Site.Params.dateformNum }}<time datetime="{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}">{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}</time>{{ else }}<time datetime="{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}">{{ dateFormat "2006-01-02" .GitInfo.AuthorDate.Local }}</time>{{ end }}</p>
+    {{- end }}
+</div>
