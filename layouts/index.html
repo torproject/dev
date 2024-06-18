@@ -13,7 +13,7 @@
         <div class="col-lg-7">
           <h1 class="h4">Your guide to {{ .Title }}</h1>
           <p>Find resources and documentation to get started building for Tor.</p>
-          <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}understanding-tor/overview/" role="button">{{ i18n "get-started" }}</a>
+          <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ ref . "understanding-tor/overview" }}" role="button">{{ i18n "get-started" }}</a>
         </div>
         <div class="col-lg-7 d-none d-lg-block">
           <img class="img-fluid" src="/images/hero.png" alt="Hero image">
