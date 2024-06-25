@@ -27,3 +27,7 @@ pages:
     - npm install
     - npm run build -- --baseURL $CI_PAGES_URL
   dependencies: []
+  rules:
+    - if: $L10N_STAGING == null &&
+        $REVIEW_STATIC_GITLAB_SHIM_SSH_PRIVATE_KEY == null &&
+        $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
