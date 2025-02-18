@@ -8,7 +8,7 @@ include:
       - static-shim-deploy.yml
 
 build:
-  image: ${CI_DEPENDENCY_PROXY_DIRECT_GROUP_IMAGE_PREFIX}/node:latest
+  image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/node:latest
   stage: build
   script:
     - npm install
@@ -20,7 +20,7 @@ build:
 # override pages job defined in templates
 # needs to build with specific --baseURL
 pages:
-  image: ${CI_DEPENDENCY_PROXY_DIRECT_GROUP_IMAGE_PREFIX}/node:latest
+  image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/node:latest
   variables:
     GIT_STRATEGY: fetch
   script:
